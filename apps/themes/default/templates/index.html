@@ -5,13 +5,109 @@
 {% block meta_title %}{% trans "Home" %}{% endblock %}
 
 {% block title %}
-{% trans "Home" %}
+	<h1>{% trans "Maui, the OS you are waiting for..." %}</h1>
+	<h2>{% trans "...is under development" %}</h2>
+	<p>
+		{% blocktrans %}
+			Our monkeys are working very hard to deliver the first tech preview.<br>
+			Feeding them will speed up the process, click the button to help those poor starving animals.
+		{% endblocktrans %}
+	</p>
+
+	<div class="row-fluid">
+		<div class="span2"></div>
+		<div class="span8">
+			<div class="span4"></div>
+			<div class="span4">
+				<a class="btn btn-primary btn-large">Feed the monkeys</a>
+			</div>
+			<div class="span4"></div>
+		</div>
+		<div class="span2"></div>
+	</div>
 {% endblock %}
 
 {% block breadcrumb_menu %}
-<li class="active">{% trans "Home" %}</li>
+	<li class="active">{% trans "Home" %}</li>
 {% endblock %}
 
 {% block main %}
-{% trans "This is the homepage." %}
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				<h1 class="lead">{% trans "Easy to use, fast and lightweight operating system based on Free Software" %}</h1>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row-fluid" id="brief-features">
+			<div class="span4">
+				<div class="row-fluid">
+					<div class="span1">
+						<div class="feature-icon" id=""></div>
+					</div>
+					<div class="span11">
+						<h3>{% trans "Lightweight, fast and easy to use" %}</h3>
+						<p>
+							{% blocktrans %}
+							Maui is aimed at improving your entire desktop experience. Instead of forcing you to know
+							every detail of your computer we expect you to turn it on, sit down and simply use it.
+							{% endblocktrans %}
+						</p>
+						<p>
+							{% blocktrans %}
+							In order to do so we have tailored a solution that can boot in less than 4 seconds
+							to a nice and easy to use desktop environment. All the applications shipped with Maui
+							are designed to work together, are consistent and coherent because they use the same
+							framework: <a href="http://qt-project.org/" target="_blank">Qt 5</a>.
+							{% endblocktrans %}
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="span4">
+				<div class="row-fluid">
+					<div class="span1">
+						<div class="feature-icon" id=""></div>
+					</div>
+					<div class="span11">
+						<h3>{% trans "Next-generation technologies" %}</h3>
+						<p>
+							{% blocktrans %}
+							Maui uses new Linux technologies that other distributions are starting to look at now.
+							The graphics infrastructure is completely new, instead of the ancient X11 display server
+							we use the faster and modern <a href="http://wayland.freedesktop.org" target="_blank">Wayland</a>,
+							which help us deliver a very pleseant and efficient windowing system.
+							{% endblocktrans %}
+						</p>
+						<p>
+							{% blocktrans %}
+							Maui is also completely integrated with <a href="http://0pointer.de/blog/projects/systemd.html" target="_blank">systemd</a>
+							in order to bring up your desktop in a few seconds.
+							{% endblocktrans %}
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="span4">
+				<div class="row-fluid">
+					<div class="span1">
+						<div class="feature-icon" id=""></div>
+					</div>
+					<div class="span11">
+						<h3>{% trans "Stable and reliable" %}</h3>
+						<p>
+							{% blocktrans %}
+							One of the problems with the existing Linux-based solutions is that they are fast moving targets.
+							For us a stable API and ABI is indispensable.
+							{% endblocktrans %}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 {% endblock %}
