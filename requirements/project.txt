@@ -1,1 +1,2 @@
 Mezzanine==1.1.2
+djang-compressor>=1.1.2

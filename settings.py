@@ -201,6 +201,8 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 ################
 
 INSTALLED_APPS = (
+    "mauiwebsite.apps.themes.default",
+    "mauiwebsite.apps.themes.mobile",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -219,7 +221,7 @@ INSTALLED_APPS = (
     "mezzanine.galleries",
     "mezzanine.twitter",
     #"mezzanine.accounts",
-    #"mezzanine.mobile",
+    "mezzanine.mobile",
 )
 
 # List of processors used by RequestContext to populate the context.
