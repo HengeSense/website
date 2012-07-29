@@ -14,11 +14,8 @@
 					{% if page.in_navigation %}
 						<li class="dropdown{% if page.is_current_or_ascendant %} active{% endif %}"
 						    id="dropdown-menu-{{ page.html_id }}">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="{{ page.get_absolute_url }}">
 								{{ page.title }}
-<!--
-{{ page.get_absolute_url }}
--->
 								{% if page.has_children %}<b class="caret"></b>{% endif %}
 							</a>
 							{% if page.has_children %}{% page_menu page %}{% endif %}
