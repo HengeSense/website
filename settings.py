@@ -89,7 +89,7 @@ USE_SOUTH = True
 # In the format (('Full Name', 'email@example.com'),
 #                ('Full Name', 'anotheremail@example.com'))
 ADMINS = (
-    # ('Your Name', 'your_email@domain.com'),
+    ("Pier Luigi Fiorini", "pierluigi.fiorini@maui-project.org"),
 )
 MANAGERS = ADMINS
 
@@ -202,7 +202,8 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 
 INSTALLED_APPS = (
     "mauiwebsite.apps.themes.default",
-    "mauiwebsite.apps.themes.mobile",
+#    "mauiwebsite.apps.themes.mobile",
+    "mauiwebsite.apps.content",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -220,8 +221,8 @@ INSTALLED_APPS = (
     "mezzanine.pages",
     "mezzanine.galleries",
     "mezzanine.twitter",
-    #"mezzanine.accounts",
-    "mezzanine.mobile",
+    "mezzanine.accounts",
+#    "mezzanine.mobile",
 )
 
 # List of processors used by RequestContext to populate the context.
