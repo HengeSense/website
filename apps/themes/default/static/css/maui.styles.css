@@ -34,8 +34,15 @@ footer a {
 
 /* Custom styles */
 
-.twitter {
-	background: url(../img/twitter.png) 0 0 no-repeat;
+#header .brand {
+  float: left;
+  display: block;
+  padding: 0px 20px 12px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #999999;
 }
 
 /* Override Bootstrap colors */
@@ -53,13 +60,15 @@ footer a {
 }
 
 /* When the hero unit is used on top of the page we draw a gradient */
+/*
 body > .hero-unit {
-	background: #a5a5a5; /* Old browsers */
-	background: -moz-linear-gradient(top,  #a5a5a5 0%, #c1c1c1 44%, #ededed 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5a5a5), color-stop(44%,#c1c1c1), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #a5a5a5 0%,#c1c1c1 44%,#ededed 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #a5a5a5 0%,#c1c1c1 44%,#ededed 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #a5a5a5 0%,#c1c1c1 44%,#ededed 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #a5a5a5 0%,#c1c1c1 44%,#ededed 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5a5a5', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+	background: #a5a5a5; // Old browsers
+	background: -moz-linear-gradient(top,  #a5a5a5 0%, #c1c1c1 44%, #ededed 100%); // FF3.6+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5a5a5), color-stop(44%,#c1c1c1), color-stop(100%,#ededed)); // Chrome,Safari4+
+	background: -webkit-linear-gradient(top,  #a5a5a5 0%,#c1c1c1 44%,#ededed 100%); // Chrome10+,Safari5.1+
+	background: -o-linear-gradient(top,  #a5a5a5 0%,#c1c1c1 44%,#ededed 100%); // Opera 11.10+
+	background: -ms-linear-gradient(top,  #a5a5a5 0%,#c1c1c1 44%,#ededed 100%); // IE10+
+	background: linear-gradient(to bottom,  #a5a5a5 0%,#c1c1c1 44%,#ededed 100%); // W3C
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5a5a5', endColorstr='#ededed',GradientType=0 ); // IE6-9
 }
+*/

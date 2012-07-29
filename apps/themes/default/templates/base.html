@@ -14,12 +14,14 @@
 			<link rel="alternate" type="application/atom+xml" title="Atom" href="{% url blog_post_feed "atom" %}">
 		{% endifinstalled %}
 
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif" rel="stylesheet" type="text/css">
+
 		{% compress css %}
-			<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css">
-			<link rel="stylesheet" href="{{ STATIC_URL }}css/maui.layout.css">
-			<link rel="stylesheet" href="{{ STATIC_URL }}css/maui.styles.css">
+			<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css" type="text/css">
+			<link rel="stylesheet" href="{{ STATIC_URL }}css/maui.layout.css" type="text/css">
+			<link rel="stylesheet" href="{{ STATIC_URL }}css/maui.styles.css" type="text/css">
 			{% ifinstalled cartridge.shop %}
-				<link rel="stylesheet" href="{{ STATIC_URL }}css/cartridge.css">
+				<link rel="stylesheet" href="{{ STATIC_URL }}css/cartridge.css" type="text/css">
 			{% endifinstalled %}
 			{% block extra_css %}{% endblock %}
 		{% endcompress %}
@@ -47,7 +49,7 @@
 				<div class="container">
 					{% if settings.SITE_TITLE %}
 						<a class="brand" href="/" {% if settings.SITE_TAGLINE %}title="{{ settings.SITE_TAGLINE }}"{% endif %}>
-							<img src="{{ STATIC_URL }}img/logo.png" width="199" height="76" alt="Logo">
+							<img src="{{ STATIC_URL }}img/logo.png" width="96" height="96" alt="{% trans "Logo" %}">
 						</a>
 						<h1 class="site-title">
 							<a href="/" {% if settings.SITE_TAGLINE %}title="{{ settings.SITE_TAGLINE }}"{% endif %}>{{ settings.SITE_TITLE }}</a>
@@ -116,7 +118,9 @@
 		</div>
 
 		<footer>
-			{% page_menu "pages/menus/footer.html" %}
+			{% comment %}
+				{% page_menu "pages/menus/footer.html" %}
+			{% endcomment %}
 
 			<div id="footer-floor">
 				<div class="container-fluid">
