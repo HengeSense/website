@@ -1,0 +1,65 @@
+[
+    {
+        "pk": 2, 
+        "model": "conf.setting", 
+        "fields": {
+            "site": 1, 
+            "value": "UA-33602199-1", 
+            "name": "GOOGLE_ANALYTICS_ID"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "conf.setting", 
+        "fields": {
+            "site": 1, 
+            "value": "True", 
+            "name": "COMMENTS_UNAPPROVED_VISIBLE"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "conf.setting", 
+        "fields": {
+            "site": 1, 
+            "value": "Out of the box experience", 
+            "name": "SITE_TAGLINE"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "conf.setting", 
+        "fields": {
+            "site": 1, 
+            "value": "Maui", 
+            "name": "SITE_TITLE"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "conf.setting", 
+        "fields": {
+            "site": 1, 
+            "value": "True", 
+            "name": "COMMENTS_ACCOUNT_REQUIRED"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "conf.setting", 
+        "fields": {
+            "site": 1, 
+            "value": "1", 
+            "name": "RICHTEXT_FILTER_LEVEL"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "conf.setting", 
+        "fields": {
+            "site": 1, 
+            "value": "True", 
+            "name": "COMMENTS_DEFAULT_APPROVED"
+        }
+    }
+]

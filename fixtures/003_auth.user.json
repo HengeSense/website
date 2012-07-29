@@ -1,0 +1,20 @@
+[
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "plfiorini", 
+            "first_name": "Pier Luigi", 
+            "last_name": "Fiorini", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-07-29T19:21:43Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$Js3zb7b4XHkK$pbMaStBStinyZZ/aFD3LR1GoUdlX6ZS14WqL0io5V9M=", 
+            "email": "pierluigi.fiorini@maui-project.org", 
+            "date_joined": "2012-06-21T20:53:13Z"
+        }
+    }
+]
