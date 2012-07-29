@@ -5,7 +5,7 @@
 {% block meta_title %}{% trans "Home" %}{% endblock %}
 
 {% block title %}
-	<h1>{% trans "Maui, the OS you are waiting for..." %}</h1>
+	<h1>{% trans "The OS you are waiting for..." %}</h1>
 	<h2>{% trans "...is under development" %}</h2>
 	<p>
 		{% blocktrans %}
@@ -41,7 +41,7 @@
 
 		<hr>
 
-		<div class="row-fluid" id="brief-features">
+		<div class="row-fluid" class="brief-features">
 			<div class="span4">
 				<div class="row-fluid">
 					<div class="span1">
@@ -51,16 +51,14 @@
 						<h3>{% trans "Lightweight, fast and easy to use" %}</h3>
 						<p>
 							{% blocktrans %}
-							Maui is aimed at improving your entire desktop experience. Instead of forcing you to know
+							Maui aims to offer an excellent desktop experience. Instead of forcing you to know
 							every detail of your computer we expect you to turn it on, sit down and simply use it.
 							{% endblocktrans %}
 						</p>
 						<p>
 							{% blocktrans %}
 							In order to do so we have tailored a solution that can boot in less than 4 seconds
-							to a nice and easy to use desktop environment. All the applications shipped with Maui
-							are designed to work together, are consistent and coherent because they use the same
-							framework: <a href="http://qt-project.org/" target="_blank">Qt 5</a>.
+							to a nice, easy to use and flicker-free desktop environment.
 							{% endblocktrans %}
 						</p>
 					</div>
@@ -73,19 +71,23 @@
 						<div class="feature-icon" id=""></div>
 					</div>
 					<div class="span11">
-						<h3>{% trans "Next-generation technologies" %}</h3>
+						<h3>{% trans "Coherent and integrated" %}</h3>
 						<p>
 							{% blocktrans %}
-							Maui uses new Linux technologies that other distributions are starting to look at now.
-							The graphics infrastructure is completely new, instead of the ancient X11 display server
-							we use the faster and modern <a href="http://wayland.freedesktop.org" target="_blank">Wayland</a>,
-							which help us deliver a very pleseant and efficient windowing system.
+							All the applications shipped with Maui
+							are designed to work together, are consistent and coherent because they use the same
+							framework: <a href="http://qt-project.org/" target="_blank">Qt 5</a>. Qt is the most
+							advanced and modern application and UI framework available, brought to you by a
+							community lead by <a href="http://www.nokia.com/" target="_blank">Nokia</a> and used
+							by many companies.
 							{% endblocktrans %}
 						</p>
 						<p>
 							{% blocktrans %}
-							Maui is also completely integrated with <a href="http://0pointer.de/blog/projects/systemd.html" target="_blank">systemd</a>
-							in order to bring up your desktop in a few seconds.
+							A lot of features of the desktop are also available to the applications, for example
+							all the applications are capable of managing compressed archives without to implement
+							this capability themselves. Also, applications can let other applications use some of
+							their features without the need to implement it over and over.
 							{% endblocktrans %}
 						</p>
 					</div>
@@ -102,7 +104,81 @@
 						<p>
 							{% blocktrans %}
 							One of the problems with the existing Linux-based solutions is that they are fast moving targets.
-							For us a stable API and ABI is indispensable.
+							For us a stable API and ABI is indispensable, it avoids software breakage assuring third party developers
+							their software will still work after an update of the operating system.
+							{% endblocktrans %}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row-fluid" id="brief-features">
+			<div class="span4">
+				<div class="row-fluid">
+					<div class="span1">
+						<div class="feature-icon" id=""></div>
+					</div>
+					<div class="span11">
+						<h3>{% trans "Next-generation technologies" %}</h3>
+						<p>
+							{% blocktrans %}
+							The graphics infrastructure is completely new, instead of the ancient X11 display server
+							we use the faster and modern <a href="http://wayland.freedesktop.org" target="_blank">Wayland</a>,
+							which help us deliver a very pleseant and efficient windowing system.
+							{% endblocktrans %}
+						</p>
+						<p>
+							{% blocktrans %}
+							Maui is also completely integrated with <a href="http://www.freedesktop.org/wiki/Software/systemd/" target="_blank">systemd</a>
+							in order to bring up your desktop in a few seconds.
+							{% endblocktrans %}
+						</p>
+						<p>
+							{% blocktrans %}
+							We also follow and support the new trends like <a href="https://btrfs.wiki.kernel.org/index.php/Main_Page" target="_blank">BTRFS</a>
+							and <a href="http://www.llvm.org/" target="_blank">LLVM</a>.
+							{% endblocktrans %}
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="span4">
+				<div class="row-fluid">
+					<div class="span1">
+						<div class="feature-icon" id=""></div>
+					</div>
+					<div class="span11">
+						<h3>{% trans "Innovative file hierarchy" %}</h3>
+						<p>
+							{% blocktrans %}
+							Maui also separates the file system hierarchy in three areas: <em>system</em>, <em>common</em> and <em>user</em>.
+							Programs and libraries shipped by the operating system and their configuration files are located
+							under the <em>/system</em> directory, while programs and libraries installed by the user are either under
+							<em>/common</em> if available to all the users or under the user's home directory if used only by a single
+							account. In case of problems you can always disable everything but <em>system</em> booting into a system
+							{% endblocktrans %}
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="span4">
+				<div class="row-fluid">
+					<div class="span1">
+						<div class="feature-icon" id=""></div>
+					</div>
+					<div class="span11">
+						<h3>{% trans "Social desktop" %}</h3>
+						<p>
+							{% blocktrans %}
+							Maui aims at complete integration with the mobile world and social media.
+							An API to bring access to your social accounts to all the applications is in development.
+							This means that you will be able to post a link on Facebook to the Web site your visiting,
+							upload photos to Flickr and Facebook from your desktop, change your status on GoogleTalk and Facebook
+							at the same time, access your GDrive files as they were into your hard drive, reach all your contacts
+							no matter what IM network or social media they are on, and so on.
 							{% endblocktrans %}
 						</p>
 					</div>

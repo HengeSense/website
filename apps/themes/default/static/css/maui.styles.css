@@ -16,8 +16,26 @@ footer {
 	padding-top: 1em;
 }
 
+footer p {
+	color: #999;
+}
+
+footer a {
+	color: white;
+}
+
 #footer-floor {
 	background-color: #1b1b1b;
+}
+
+#footer-floor .stay-in-touch {
+	text-align: right;
+}
+
+/* Custom styles */
+
+.twitter {
+	background: url(../img/twitter.png) 0 0 no-repeat;
 }
 
 /* Override Bootstrap colors */

@@ -47,7 +47,7 @@
 				<div class="container">
 					{% if settings.SITE_TITLE %}
 						<a class="brand" href="/" {% if settings.SITE_TAGLINE %}title="{{ settings.SITE_TAGLINE }}"{% endif %}>
-							<img src="{{ STATIC_URL }}img/logo.png" width="111" height="28" alt="Logo">
+							<img src="{{ STATIC_URL }}img/logo.png" width="199" height="76" alt="Logo">
 						</a>
 						<h1 class="site-title">
 							<a href="/" {% if settings.SITE_TAGLINE %}title="{{ settings.SITE_TAGLINE }}"{% endif %}>{{ settings.SITE_TITLE }}</a>
@@ -82,15 +82,19 @@
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span2">
-					<div class="panel tree">{% page_menu "pages/menus/tree.html" %}</div>
+					{% if not on_home %}
+						<div class="panel tree">{% page_menu "pages/menus/tree.html" %}</div>
+					{% endif %}
 				</div>
 
 				<div class="span8">
-					<ul class="breadcrumb">
-						{% spaceless %}
-							{% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
-						{% endspaceless %}
-					</ul>
+					{% if not on_home %}
+						<ul class="breadcrumb">
+							{% spaceless %}
+								{% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
+							{% endspaceless %}
+						</ul>
+					{% endif %}
 
 					{% block main %}{% endblock %}
 				</div>
@@ -100,11 +104,13 @@
 						{% include "includes/user_panel.html" %}
 					{% endnevercache %}
 
-					{% block right_panel %}
-						{% ifinstalled mezzanine.twitter %}
-							{% include "twitter/tweets.html" %}
-						{% endifinstalled %}
-					{% endblock %}
+					{% if not on_home %}
+						{% block right_panel %}
+							{% ifinstalled mezzanine.twitter %}
+								{% include "twitter/tweets.html" %}
+							{% endifinstalled %}
+						{% endblock %}
+					{% endif %}
 				</div>
 			</div>
 		</div>
@@ -115,12 +121,21 @@
 			<div id="footer-floor">
 				<div class="container-fluid">
 					<div class="row-fluid">
-						<div class="span10">
+						<div class="span2"></div>
+						<div class="span4">
 							<p>
 								Copyright &copy; 2012 <a href="http://plfiorini.blogspot.com/">Pier Luigi Fiorini</a>. {% trans "All rights reserved." %}
 								<a href="terms">{% trans "Terms" %}</a> & <a href="privacy">{% trans "Privacy" %}</a>.
 							</p>
 						</div>
+						<div class="span4">
+							<a href="https://twitter.com/mauilinux/" target="_blank" title="{% trans "Follow @maui on Twitter" %}"><img src="{{ STATIC_URL }}img/twitter.png"></a>
+							<a href="https://www.facebook.com/mauios/" target="_blank" title="{% blocktrans %}"Like" Maui on Facebook{% endblocktrans %}"><img src="{{ STATIC_URL }}img/facebook.png"></a>
+<!--
+							<a href="https://plus.google.com/106410682256187719404/" target="_blank" title="{% trans "Follow us on Google+" %}"><img src="{{ STATIC_URL }}img/googleplus.png"></a>
+-->
+						</div>
+						<div class="span2"></div>
 					</div>
 				</div>
 			</div>
@@ -135,50 +150,6 @@
 			</div>
 -->
 		</div>
-
-			<div class="columns">
-				<div class="column left">
-				</div>
-
-				<div class="column">
-
-					<h1>{% block title %}{% endblock %}</h1>
-
-					{% block main %}{% endblock %}
-				</div>
-
-				<div class="column right">
-
-					<div class="panel">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<footer class="container-12 clear-block">
-<div style="float: left; clear: both">
-			<div class="grid-2 clear-block">
-			</div>
-
-			<div class="grid-2">
-				{% trans "Powered by" %}
-				<a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
-				<a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}
-				{% trans "and" %}
-				<a href="http://www.djangoproject.com">Django</a>
-				<span class="separator">|</span>
-				Theme by <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>
-				{% ifinstalled mezzanine.mobile %}
-					<span class="separator">|</span>
-					<a href="{% url set_device "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
-				{% endifinstalled %}
-			</div>
-
-			<div class="grid-2 clear-block">
-				ciao
-			</div>
-			</div>
-		</footer>
 {% endcomment %}
 		{% include "includes/footer_scripts.html" %}
 	</body>
