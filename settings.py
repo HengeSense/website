@@ -195,6 +195,10 @@ ROOT_URLCONF = "%s.urls" % PROJECT_DIRNAME
 # Don't forget to use absolute paths, not relative paths.
 TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 
+# URL for the JavaScript file (relative to STATIC_URL) that handles
+# configuring TinyMCE when the default RICHTEXT_WIDGET_CLASS is used.
+TINYMCE_SETUP_JS = "maui/js/tinymce_setup.js"
+
 
 ################
 # APPLICATIONS #
