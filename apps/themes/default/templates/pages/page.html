@@ -20,8 +20,18 @@
 {% endblock %}
 
 {% block title %}
-	{% editable page.title %}<h1>{{ page.title }}</h1>{% endeditable %}
+	{% editable page.title %}
+		<h1>
+			{{ page.title }}
+			{% if page.subtitlerichtextpage and page.subtitlerichtextpage.subtitle %}
+				{% editable page.subtitlerichtextpage.subtitle %}<small>{{ page.subtitlerichtextpage.subtitle }}</small>{% endeditable %}
+			{% endif %}
+		</h1>
+	{% endeditable %}
 {% endblock %}
 
 {% block main %}
+	{% if page.subtitlerichtextpage %}
+		{{ page.subtitlerichtextpage.content|richtext_filter|safe }}
+	{% endif %}
 {% endblock %}
