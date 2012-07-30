@@ -53,6 +53,13 @@ urlpatterns = patterns("",
 
     # url("^$", "mezzanine.blog.views.blog_post_list", name="home"),
 
+    # STATIC PAGES WITH TEMPLATES
+    # ---------------------------
+    # Here's where we put pages that are too complicated to be edited
+    # by the Mezzanine admin interface.
+
+    # url("^path/to/page/$", direct_to_template, {"template": "path/to/page.html"}, name="path_to_page"),
+
     # MEZZANINE'S URLS
     # ----------------
     # Note: ADD YOUR OWN URLPATTERNS *ABOVE* THE LINE BELOW.
