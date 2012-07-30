@@ -57,6 +57,12 @@
 					{% endif %}
 
 					{% page_menu "pages/menus/dropdown.html" %}
+
+					{% nevercache %}
+<div class="nav">
+						{% include "includes/user_panel.html" %}
+</div>
+					{% endnevercache %}
 				</div>
 			</div>
 		</div>
@@ -104,10 +110,6 @@
 				</div>
 
 				<div class="span2">
-					{% nevercache %}
-						{% include "includes/user_panel.html" %}
-					{% endnevercache %}
-
 					{% if not on_home %}
 						{% block right_panel %}
 							{% ifinstalled mezzanine.twitter %}
