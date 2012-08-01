@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load pages_tags mezzanine_tags i18n %}
+<html lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
+		<link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
+
+		{% ifinstalled mezzanine.blog %}
+			<link rel="alternate" type="application/rss+xml" title="RSS" href="{% url blog_post_feed "rss" %}">
+			<link rel="alternate" type="application/atom+xml" title="Atom" href="{% url blog_post_feed "atom" %}">
+		{% endifinstalled %}
+
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif" rel="stylesheet" type="text/css">
+
+		{% compress css %}
+			<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css" type="text/css">
+			<link rel="stylesheet" href="{{ STATIC_URL }}css/maui.layout.css" type="text/css">
+			<link rel="stylesheet" href="{{ STATIC_URL }}css/maui.styles.css" type="text/css">
+			{% block extra_css %}{% endblock %}
+		{% endcompress %}
+
+		{% compress js %}
+			<script src="{{ STATIC_URL }}mezzanine/js/{{ settings.JQUERY_FILENAME }}"></script>
+			<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+			<script>
+				$(function() {
+					$(".middleinput:text, textarea").addClass("xlarge");
+					$(".control-group label").addClass("control-label");
+				});
+			</script>
+			{% block extra_js %}{% endblock %}
+		{% endcompress %}
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		{% block extra_head %}{% endblock %}
+	</head>
+	<body id="{% block body_id %}body{% endblock %}">
+		<div class="container-fluid">
+			{% block main %}{% endblock %}
+		</div>
+	</body>
+</html>
