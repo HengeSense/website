@@ -12,25 +12,42 @@
 	<style type="text/css">
 		.divider-down {
 			border-bottom: 1px solid #999;
+			margin-bottom: 1em;
+		}
+
+		.divider-down:last-child {
+			border-bottom: none;
 		}
 
 		section h1 {
 			color: #777;
-			text-shadow: 0px 1px 0px white;
+			text-shadow: 0px 1px 0px rgba(255, 255, 255, .3), 0px -1px 0px rgba(0, 0, 0, .7);
+			text-rendering: auto;
+			-webkit-font-smoothing: subpixel-antialiased;
 		}
 
 		section small {
-			font-size: 18px;
-			font-weight: normal:
 			color: #999;
-			line-height: 1;
-			letter-spacing: -1px;
+			font-size: 1.2em;
 		}
 
 		section p {
 			line-height: 1.5em;
 		}
 	</style>
+{% endblock %}
+
+{% block extra_js %}
+	<script type="text/javascript">
+		$(function() {
+			$("section#tech button.greff").click(function() {
+				$("div.greff").toggle();
+			});
+			$("section#tech button.qmldemos").click(function() {
+				$("div.qmldemos").toggle();
+			});
+		});
+	</script>
 {% endblock %}
 
 {% block breadcrumb_menu %}
@@ -40,61 +57,163 @@
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span1"></div>
-			<div class="span2">
-				<div class="well">
-					<a href="#opensource"><img src="{{ STATIC_URL }}img/Opensource.png"><h3>{% trans "Open Source" %}</h3></a>
-				</div>
-			</div>
-			<div class="span2">
-				<div class="well">
-					<a href="#linux"><img src="{{ STATIC_URL }}img/Tux.png"><h3>{% trans "Linux" %}</h3></a>
-				</div>
-			</div>
-			<div class="span2">
-				<div class="well">
-					<a href="#qt"><img src="{{ STATIC_URL }}img/Qt-logo.png"><h3>{% trans "Qt" %}</h3></a>
-				</div>
-			</div>
-			<div class="span2">
-				<div class="well">aa</div>
-			</div>
-			<div class="span2">
-				<div class="well">aa</div>
+			<div class="span10">
+				<ul class="thumbnails">
+					<li class="span3">
+						<a href="#opensource" class="thumbnail"><img src="{{ STATIC_URL }}img/Opensource.png" alt="Open Source"></a>
+						<h3>{% trans "Open Source" %}</h3>
+					</li>
+					<li class="span3">
+						<a href="#fast" class="thumbnail"><img src="{{ STATIC_URL }}img/Opensource.png" alt="Open Source"></a>
+						<h3>{% trans "Fast and lightweight" %}</h3>
+					</li>
+					<li class="span3">
+						<a href="#easy" class="thumbnail"><img src="{{ STATIC_URL }}img/Opensource.png" alt="Open Source"></a>
+						<h3>{% trans "Easy to Use" %}</h3>
+					</li>
+					<li class="span3">
+						<a href="#tech" class="thumbnail"><img src="{{ STATIC_URL }}img/icons/applications-system.png" alt="Advanced Technology"></a>
+						<h3>{% trans "Advanced Technology" %}</h3>
+					</li>
+				</ul>
 			</div>
 			<div class="span1"></div>
 		</div>
 	</div>
 
-	<section class="divider-down" id="opensource">
-		<header>
-			<h1>Open Source</h1>
-			<small>aaa</small>
-		</header>
-		<p>
-			{% blocktrans %}
-				Open Source is collective power in action, the power of a worldwide
-				community that build, share and improve the software together and
-				then make it available to everyone.
-			{% endblocktrans %}
-		</p>
-		<p>
-			{% blocktrans %}
-				We want to make a system that is easy to use and give our users
-				the best out of the box user experience. This is possible thanks
-				to the worldwide Open Source community, because experts all over
-				the world make a little piece of technology available to others.
-			{% endblocktrans %}
-		</p>
-	</section>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2"></div>
+			<div class="span8">
+				<section class="divider-down" id="opensource">
+					<header>
+						<div class="container-fluid">
+							<div class="row-fluid">
+								<div class="span2">
+									<img width="64" height="64" src="{{ STATIC_URL }}img/Opensource.png">
+								</div>
+								<div class="span10">
+									<h1>{% trans "Open Source" %}</h1>
+									<small>{% trans "Participation and collaboration." %}</small>
+								</div>
+							</div>
+						</div>
+						<div style="margin-bottom: 2em"></div>
+					</header>
+					<p>
+						{% blocktrans %}
+							Open Source is collective power in action, the power of a worldwide
+							community that build, share and improve the software together and
+							then make it available to everyone.
+						{% endblocktrans %}
+					</p>
+					<p>
+						{% blocktrans %}
+							We want to make a system that is easy to use and give our users
+							the best out of the box user experience. This is possible thanks
+							to the worldwide Open Source community, because experts all over
+							the world make a little piece of technology available to others.
+						{% endblocktrans %}
+					</p>
+				</section>
 
-	<section class="divider-down" id="linux">
-		<header>
-			<h1>Linux</h1>
-			<small>aaa</small>
-		</header>
-		<p>
-			{% blocktrans %}
-			{% endblocktrans %}
-		</p>
-	</section>
+				<section class="divider-down" id="fast">
+					<header>
+						<div class="container-fluid">
+							<div class="row-fluid">
+								<div class="span2">
+									<img width="64" height="64" src="{{ STATIC_URL }}img/Opensource.png">
+								</div>
+								<div class="span10">
+									<h1>{% trans "Lightweight, fast and easy to use" %}</h1>
+									<small>{% trans "Participation and collaboration." %}</small>
+								</div>
+							</div>
+						</div>
+						<div style="margin-bottom: 2em"></div>
+					</header>
+					<p>
+						{% blocktrans %}
+							Maui aims to offer an excellent desktop experience.
+							Instead of forcing you to know every detail of your computer we expect you to turn it on, sit down and simply use it.
+						{% endblocktrans %}
+					</p>
+					<p>
+						{% blocktrans %}
+							In order to do so we have tailored a solution that can boot in less than 4 seconds to a nice, easy to use and flicker-free desktop environment.
+						{% endblocktrans %}
+					</p>
+				</section>
+
+				<section class="divider-down" id="tech">
+					<header>
+						<div class="container-fluid">
+							<div class="row-fluid">
+								<div class="span2">
+									<img width="64" height="64" src="{{ STATIC_URL }}img/icons/applications-system.png">
+								</div>
+								<div class="span10">
+									<h1>{% trans "Advanced Technology" %}</h1>
+									<small>{% trans "The most amazing and powerful technologies out there." %}</small>
+								</div>
+							</div>
+						</div>
+						<div style="margin-bottom: 2em"></div>
+					</header>
+
+					<div class="tabbable tabs-below">
+						<div class="tab-content">
+							<div class="tab-pane active" id="tech-info">
+								<img align="left" style="padding: 1em" src="{{ STATIC_URL }}img/Qt-logo.png" width="67" height="80">
+								<p>
+									{% blocktrans %}
+										Qt is an application development framework based on C++ and has been chosen
+										to implement the desktop environment and applications.
+										Over 450,000 developers in more than 70 industries have chosen Qt to
+										<a href="http://qt.nokia.com/qt-in-use">build advanced applications and devices</a>.
+									{% endblocktrans %}
+								</p>
+								<p>
+									{% blocktrans %}
+									The desktop shell is built using Qt Quick, a collection of technologies that are
+									designed to help developers create intuitive, modern, and fluid user interfaces.
+									It includes QML, a CSS & JavaScript like language to ease the development of
+									dynamic and modern applications.
+									{% endblocktrans %}
+								</p>
+								<p>
+									{% blocktrans %}
+									Qt Creator is a cross-platform IDE (integrated development environment)
+									tailored to the needs of Qt developers. It focuses on providing features that help
+									new Qt users get up and running faster, and also boost the productivity of
+									experienced Qt developers. It is part of the Nokia Qt SDK.
+									{% endblocktrans %}
+								</p>
+							</div>
+
+							<div class="tab-pane" id="tech-greff">
+								<iframe width="640" height="360" src="http://www.youtube.com/embed/MsfioYYyrUg" frameborder="0" allowfullscreen></iframe>
+							</div>
+
+							<div class="tab-pane" id="tech-qmldemos">
+								<iframe width="480" height="360" src="http://www.youtube.com/embed/1-g9uF6ApyM" frameborder="0" allowfullscreen></iframe>
+							</div>
+
+							<div class="tab-pane" id="tech-wayland">
+								<iframe width="640" height="360" src="http://www.youtube.com/embed/qdKwSrwxIYA" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tech-info" data-toggle="tab">{% trans "Advanced Technology" %}</a></li>
+							<li><a href="#tech-greff" data-toggle="tab">{% trans "Graphical Effects" %}</a></li>
+							<li><a href="#tech-qmldemos" data-toggle="tab">{% trans "QML Demos" %}</a></li>
+							<li><a href="#tech-wayland" data-toggle="tab">{% trans "Wayland" %}</a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<div class="span2"></div>
+		</div>
+	</div>
 {% endblock %}
