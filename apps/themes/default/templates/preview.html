@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block meta_title %}{% trans "Maui Preview" %}{% endblock %}
+
+{% block title %}
+	<h1>{% trans "Maui Preview" %}<small>{% trans "Coming Soon" %}</small></h1>
+{% endblock %}
+
+{% block extra_css %}
+	<style type="text/css">
+		.divider-down {
+			border-bottom: 1px solid #999;
+		}
+
+		section h1 {
+			color: #777;
+			text-shadow: 0px 1px 0px white;
+		}
+
+		section small {
+			font-size: 18px;
+			font-weight: normal:
+			color: #999;
+			line-height: 1;
+			letter-spacing: -1px;
+		}
+
+		section p {
+			line-height: 1.5em;
+		}
+	</style>
+{% endblock %}
+
+{% block breadcrumb_menu %}
+{% endblock %}
+
+{% block main %}
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span1"></div>
+			<div class="span2">
+				<div class="well">
+					<a href="#opensource"><img src="{{ STATIC_URL }}img/Opensource.png"><h3>{% trans "Open Source" %}</h3></a>
+				</div>
+			</div>
+			<div class="span2">
+				<div class="well">
+					<a href="#linux"><img src="{{ STATIC_URL }}img/Tux.png"><h3>{% trans "Linux" %}</h3></a>
+				</div>
+			</div>
+			<div class="span2">
+				<div class="well">
+					<a href="#qt"><img src="{{ STATIC_URL }}img/Qt-logo.png"><h3>{% trans "Qt" %}</h3></a>
+				</div>
+			</div>
+			<div class="span2">
+				<div class="well">aa</div>
+			</div>
+			<div class="span2">
+				<div class="well">aa</div>
+			</div>
+			<div class="span1"></div>
+		</div>
+	</div>
+
+	<section class="divider-down" id="opensource">
+		<header>
+			<h1>Open Source</h1>
+			<small>aaa</small>
+		</header>
+		<p>
+			{% blocktrans %}
+				Open Source is collective power in action, the power of a worldwide
+				community that build, share and improve the software together and
+				then make it available to everyone.
+			{% endblocktrans %}
+		</p>
+		<p>
+			{% blocktrans %}
+				We want to make a system that is easy to use and give our users
+				the best out of the box user experience. This is possible thanks
+				to the worldwide Open Source community, because experts all over
+				the world make a little piece of technology available to others.
+			{% endblocktrans %}
+		</p>
+	</section>
+
+	<section class="divider-down" id="linux">
+		<header>
+			<h1>Linux</h1>
+			<small>aaa</small>
+		</header>
+		<p>
+			{% blocktrans %}
+			{% endblocktrans %}
+		</p>
+	</section>
+{% endblock %}
