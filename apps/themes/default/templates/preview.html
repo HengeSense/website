@@ -46,21 +46,17 @@
 			<div class="span1"></div>
 			<div class="span10">
 				<ul class="thumbnails">
-					<li class="span3">
-						<a href="#opensource" class="thumbnail"><img src="{{ STATIC_URL }}img/logos/opensource.png" alt="Open Source"></a>
-						<h3>{% trans "Open Source" %}</h3>
+					<li class="span4">
+						<a href="#opensource" class="thumbnail"><img src="{{ STATIC_URL }}img/logos/opensource.png" alt=""></a>
+						<h3 style="text-align: center">{% trans "Open Source" %}</h3>
 					</li>
-					<li class="span3">
-						<a href="#fast" class="thumbnail"><img src="{{ STATIC_URL }}img/logos/opensource.png" alt="Open Source"></a>
-						<h3>{% trans "Fast and lightweight" %}</h3>
+					<li class="span4">
+						<a href="#out-of-the-box" class="thumbnail"><img src="{{ STATIC_URL }}img/icons/open-box.png" alt=""></a>
+						<h3 style="text-align: center">{% trans "Out of the Box Experience" %}</h3>
 					</li>
-					<li class="span3">
-						<a href="#easy" class="thumbnail"><img src="{{ STATIC_URL }}img/logos/opensource.png" alt="Open Source"></a>
-						<h3>{% trans "Easy to Use" %}</h3>
-					</li>
-					<li class="span3">
-						<a href="#tech" class="thumbnail"><img src="{{ STATIC_URL }}img/icons/applications-system.png" alt="Advanced Technology"></a>
-						<h3>{% trans "Advanced Technology" %}</h3>
+					<li class="span4">
+						<a href="#tech" class="thumbnail"><img src="{{ STATIC_URL }}img/icons/pinion-gear-icon.png" alt="Advanced Technology"></a>
+						<h3 style="text-align: center">{% trans "Advanced Technology" %}</h3>
 					</li>
 				</ul>
 			</div>
@@ -73,19 +69,16 @@
 			<div class="span2"></div>
 			<div class="span8">
 				<section class="divider-down" id="opensource">
-					<header>
-						<div class="container-fluid">
-							<div class="row-fluid">
-								<div class="span2">
-									<img width="64" height="64" src="{{ STATIC_URL }}img/logos/opensource.png">
-								</div>
-								<div class="span10">
-									<h1>{% trans "Open Source" %}</h1>
-									<small>{% trans "Participation and collaboration." %}</small>
-								</div>
+					<header style="margin-bottom: 1em">
+						<div class="row-fluid">
+							<div class="span2">
+								<img width="64" height="64" src="{{ STATIC_URL }}img/logos/opensource.png">
+							</div>
+							<div class="span10">
+								<h1>{% trans "Open Source" %}</h1>
+								<small>{% trans "Participation and collaboration." %}</small>
 							</div>
 						</div>
-						<div style="margin-bottom: 2em"></div>
 					</header>
 					<p>
 						{% blocktrans %}
@@ -104,54 +97,93 @@
 					</p>
 				</section>
 
-				<section class="divider-down" id="fast">
-					<header>
-						<div class="container-fluid">
-							<div class="row-fluid">
-								<div class="span2">
-									<img width="64" height="64" src="{{ STATIC_URL }}img/logos/opensource.png">
-								</div>
-								<div class="span10">
-									<h1>{% trans "Lightweight, fast and easy to use" %}</h1>
-									<small>{% trans "Participation and collaboration." %}</small>
-								</div>
+				<section class="divider-down" id="out-of-the-box">
+					<header style="margin-bottom: 1em">
+						<div class="row-fluid">
+							<div class="span2">
+								<img width="64" height="64" src="{{ STATIC_URL }}img/icons/open-box.png">
+							</div>
+							<div class="span10">
+								<h1>{% trans "Out of the Box Experience" %}</h1>
+								<small>{% trans "Lightweight, coeherent and easy to use." %}</small>
 							</div>
 						</div>
-						<div style="margin-bottom: 2em"></div>
 					</header>
 					<p>
 						{% blocktrans %}
 							Maui aims to offer an excellent desktop experience.
-							Instead of forcing you to know every detail of your computer we expect you to turn it on, sit down and simply use it.
+							Instead of forcing you to know every detail of your computer we expect you to turn it on, sit down and just use it.
 						{% endblocktrans %}
 					</p>
 					<p>
 						{% blocktrans %}
-							In order to do so we have tailored a solution that can boot in less than 4 seconds to a nice, easy to use and flicker-free desktop environment.
+							It's not the kind of Linux distribution you tried before. Instead of including a plethora of different desktop environments,
+							Maui has only one made to overcome the boundaries of the current solutions.
+							Hawaii the desktop environment, has a balanced settings policy, between the minimalist approach where almost no preferences
+							are available and the highly-customizable approach where every single detail can be changed.  Sane defaults for the needs
+							of most users will make you feel at home.
 						{% endblocktrans %}
 					</p>
+					<p>
+						{% blocktrans %}
+						The &quot;shell&quot; is modular, this means we can create variants optimized for the device where you are running Maui.
+						A &quot;shell&quot; optimized for the desktop will be the first choice available, but we plan to make a tablet shell
+						available as well. As the technology we are using will be widely adopted our applications and thirdparty's will have
+						a different UX experience for both desktop and mobile devices.
+						{% endblocktrans %}
+					</p>
+					<p>
+						{% blocktrans %}
+							We pay attention to the details in order to offer you the most exciting user experience possible.
+						{% endblocktrans %}
+					</p>
+					<p>{% trans "This is done at all levels, for example:" %}</p>
+					<ul>
+						<li>{% blocktrans %}the GUI takes into account the measure of dot density of your display so that
+							it scales accordingly to your display's DPI;{% endblocktrans %}</li>
+						<li>{% blocktrans %}notifications are unobstrusive and windows don't take focus unless explicitely
+							told to, this means that nothing will interrupt your work;{% endblocktrans %}</li>
+						<li>{% blocktrans %}multitouch devices support;{% endblocktrans %}</li>
+						<li>{% blocktrans %}fast boot, under 4 seconds in most configurations;{% endblocktrans %}</li>
+					</ul>
 				</section>
 
 				<section class="divider-down" id="tech">
-					<header>
-						<div class="container-fluid">
-							<div class="row-fluid">
-								<div class="span2">
-									<img width="64" height="64" src="{{ STATIC_URL }}img/icons/applications-system.png">
-								</div>
-								<div class="span10">
-									<h1>{% trans "Advanced Technology" %}</h1>
-									<small>{% trans "The most amazing and powerful technologies out there." %}</small>
-								</div>
+					<header style="margin-bottom: 1em">
+						<div class="row-fluid">
+							<div class="span2">
+								<img width="64" height="64" src="{{ STATIC_URL }}img/icons/pinion-gear-icon.png">
+							</div>
+							<div class="span10">
+								<h1>{% trans "Advanced Technology" %}</h1>
+								<small>{% trans "Amazing and powerful technologies." %}</small>
 							</div>
 						</div>
-						<div style="margin-bottom: 2em"></div>
 					</header>
 
 					<div class="tabbable tabs-below">
 						<div class="tab-content">
 							<div class="tab-pane active" id="tech-info">
-								<img align="left" style="padding: 1em" src="{{ STATIC_URL }}img/logos/qt.png" width="67" height="80">
+								<span class="span2">
+									<img src="{{ STATIC_URL }}img/logos/wayland.png" width="80" height="80">
+								</span>
+								<p>
+									{% blocktrans %}
+									Wayland is the most exciting piece of technology for the Linux graphics stack in years and Maui is the
+									first Linux distribution to use it, in fact Maui couldn't be done without it.
+									{% endblocktrans %}
+								</p>
+								<p>
+									{% blocktrans %}
+									Wayland provides a method for compositing window managers to communicate directly with applications and
+									video hardware, its goal is a system where every frame is perfect, where applications are able to control
+									the rendering enough that users won't see tearing, lag, redraw or flicker.
+									{% endblocktrans %}
+								</p>
+
+								<span class="span2">
+									<img src="{{ STATIC_URL }}img/logos/qt.png" width="67" height="80">
+								</span>
 								<p>
 									{% blocktrans %}
 										Qt is an application development framework based on C++ and has been chosen
@@ -162,7 +194,7 @@
 								</p>
 								<p>
 									{% blocktrans %}
-									The desktop shell is built using Qt Quick, a collection of technologies that are
+									The desktop shell is built using QtQuick, a collection of technologies that are
 									designed to help developers create intuitive, modern, and fluid user interfaces.
 									It includes QML, a CSS & JavaScript like language to ease the development of
 									dynamic and modern applications.
@@ -170,10 +202,16 @@
 								</p>
 								<p>
 									{% blocktrans %}
+									QtQuick applications rendering is fully hardware accelerated and designed to run at 60Hz
+									and is synchronized with VSync in order to avoid tearing, lad and flickering.
+									{% endblocktrans %}
+								</p>
+								<p>
+									{% blocktrans %}
 									Qt Creator is a cross-platform IDE (integrated development environment)
 									tailored to the needs of Qt developers. It focuses on providing features that help
 									new Qt users get up and running faster, and also boost the productivity of
-									experienced Qt developers. It is part of the Nokia Qt SDK.
+									experienced Qt developers.
 									{% endblocktrans %}
 								</p>
 							</div>
