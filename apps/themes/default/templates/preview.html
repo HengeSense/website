@@ -26,13 +26,26 @@
 			-webkit-font-smoothing: subpixel-antialiased;
 		}
 
+/*
 		section small {
 			color: #999;
 			font-size: 1.2em;
 		}
+*/
 
 		section p {
 			line-height: 1.5em;
+		}
+
+		.image-title {
+			zoom: 1;
+			margin-bottom: 1em;
+		}
+
+		.image-title img {
+			float: left;
+			margin-right: 8px;
+			margin-left: -6px;
 		}
 	</style>
 {% endblock %}
@@ -69,17 +82,11 @@
 			<div class="span2"></div>
 			<div class="span8">
 				<section class="divider-down" id="opensource">
-					<header style="margin-bottom: 1em">
-						<div class="row-fluid">
-							<div class="span2">
-								<img width="64" height="64" src="{{ STATIC_URL }}img/logos/opensource.png">
-							</div>
-							<div class="span10">
-								<h1>{% trans "Open Source" %}</h1>
-								<small>{% trans "Participation and collaboration." %}</small>
-							</div>
-						</div>
-					</header>
+					<div class="image-title">
+						<img width="64" height="64" src="{{ STATIC_URL }}img/logos/opensource.png">
+						<h1>{% trans "Open Source" %}<br><small>{% trans "Participation and collaboration." %}</small></h1>
+					</div>
+					<br>
 					<p>
 						{% blocktrans %}
 							Open Source is collective power in action, the power of a worldwide
@@ -98,17 +105,11 @@
 				</section>
 
 				<section class="divider-down" id="out-of-the-box">
-					<header style="margin-bottom: 1em">
-						<div class="row-fluid">
-							<div class="span2">
-								<img width="64" height="64" src="{{ STATIC_URL }}img/icons/open-box.png">
-							</div>
-							<div class="span10">
-								<h1>{% trans "Out of the Box Experience" %}</h1>
-								<small>{% trans "Lightweight, coeherent and easy to use." %}</small>
-							</div>
-						</div>
-					</header>
+					<div class="image-title">
+						<img width="64" height="64" src="{{ STATIC_URL }}img/icons/open-box.png">
+						<h1>{% trans "Out of the Box Experience" %}<br><small>{% trans "Lightweight, coeherent and easy to use." %}</small></h1>
+					</div>
+					<br>
 					<p>
 						{% blocktrans %}
 							Maui aims to offer an excellent desktop experience.
@@ -149,18 +150,11 @@
 				</section>
 
 				<section class="divider-down" id="tech">
-					<header style="margin-bottom: 1em">
-						<div class="row-fluid">
-							<div class="span2">
-								<img width="64" height="64" src="{{ STATIC_URL }}img/icons/pinion-gear-icon.png">
-							</div>
-							<div class="span10">
-								<h1>{% trans "Advanced Technology" %}</h1>
-								<small>{% trans "Amazing and powerful technologies." %}</small>
-							</div>
-						</div>
-					</header>
-
+					<div class="image-title">
+						<img width="64" height="64" src="{{ STATIC_URL }}img/icons/pinion-gear-icon.png">
+						<h1>{% trans "Advanced Technology" %}<br><small>{% trans "Amazing and powerful technologies." %}</small></h1>
+					</div>
+					<br>
 					<div class="tabbable tabs-below">
 						<div class="tab-content">
 							<div class="tab-pane active" id="tech-info">
