@@ -183,6 +183,9 @@ CMS_SOFTROOT = True
 CMS_TEMPLATES = (
     ('template_home.html', 'Home'),
     ('template_normal.html', 'Normal Page'),
+
+    # Special templates, don't use them
+    ('template_index.html', 'Maui Index'),
     ('template_preview.html', 'Maui Preview'),
 )
 
