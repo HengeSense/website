@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags %}
+
+{% block base_content %}
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span3"></div>
+
+			<div class="span6">
+				<div class="content">
+					<ul class="breadcrumb">
+						{% block breadcrumb %}
+							{% show_breadcrumb 0 "breadcrumb.html" %}
+						{% endblock %}
+					</ul>
+
+					<div class="page-title">{% placeholder title_content %}</div>
+
+					{% placeholder base_content %}
+					{% placeholder template_normal_content %}
+				</div>
+			</div>
+
+			<div class="span3"></div>
+		</div>
+	</div>
+{% endblock %}

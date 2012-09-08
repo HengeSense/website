@@ -1,12 +1,133 @@
-{% load cms_tags sekizai_tags %}
-<html>
-  <head>
-	  {% render_block "css" %}
-  </head>
-  <body>
-	  {% cms_toolbar %}
-	  {% placeholder base_content %}
-	  {% block base_content%}{% endblock %}
-	  {% render_block "js" %}
-  </body>
+<!DOCTYPE html>
+{% load cms_tags sekizai_tags menu_tags i18n %}
+<html lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="{% page_attribute "meta_keywords" %}">
+		<meta name="description" content="{% page_attribute "meta_description" %}">
+		<title>{% page_attribute "page_title" %}</title>
+		<link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="{{ STATIC_URL }}css/maui.layout.css" type="text/css">
+		<link rel="stylesheet" href="{{ STATIC_URL }}css/maui.styles.css" type="text/css">
+		<link rel="stylesheet" href="{{ STATIC_URL }}css/maui.bootstrap.css" type="text/css">
+		{% block extra_css %}{% endblock %}
+
+		<script src="{{ STATIC_URL }}js/jquery-1.8.1.min.js"></script>
+		<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+		{% block extra_js %}{% endblock %}
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		{% block extra_head %}{% endblock %}
+
+		{% render_block "css" %}
+	</head>
+	<body id="{% block body_id %}body{% endblock %}">
+		{% cms_toolbar %}
+
+{% comment %}
+		<div class="navbar">
+			<div class="navbar inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+
+					<a class="brand" href="/">Maui</a>
+
+					<div class="nav-collapse">
+						<ul class="nav">
+							{% show_menu 0 100 100 100 "navbar.html" %}
+						</ul>
+
+						<form class="navbar-search pull-right">
+							<input type="text" class="search-query" placeholder="{% trans "Search" %}">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+{% endcomment %}
+
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+
+					<a class="brand" href="/">Maui</a>
+					<p class="tagline">An open source content management platform.</p>
+
+					<div class="nav-collapse">
+						<form action="/search/" class="navbar-search pull-right">
+							<input class="search-query" placeholder="{% trans "Search" %}" type="text" name="q" value="">
+						</form>
+        
+						<ul class="nav pull-right">
+							{% show_menu 0 100 0 100 "navbar.html" %}
+						</ul>
+{% comment %}
+					<ul class="nav pull-right">
+<li class="" id="dropdown-menu-about"><a href="/">Home</a></li><li class="divider-vertical"></li><li class="dropdown active"
+        id="dropdown-menu-about"><a href="/about/">
+            About
+            <span class="caret"></span></a><ul class="dropdown-menu"><li
+        id="dropdown-menu-about-team"><a href="/about/team/">Team</a></li><li
+        id="dropdown-menu-about-history"><a href="/about/history/">History</a></li></ul></li><li class="divider-vertical"></li><li class="dropdown"
+        id="dropdown-menu-blog"><a href="/blog/">
+            Blog
+            
+        </a></li><li class="divider-vertical"></li><li class="dropdown"
+        id="dropdown-menu-gallery"><a href="/gallery/">
+            Gallery
+            
+        </a></li><li class="divider-vertical"></li><li class="dropdown"
+        id="dropdown-menu-contact"><a href="/contact/">
+            Contact
+            <span class="caret"></span></a><ul class="dropdown-menu"><li
+        id="dropdown-menu-contact-legals"><a href="/contact/legals/">Legals</a></li></ul></li><li class="divider-vertical"></li></ul>
+					</ul>
+{% endcomment %}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{% block base_content %}{% endblock %}
+
+		<footer>
+			<div id="footer-floor">
+				<div class="container-fluid">
+					<div class="row-fluid">
+						<div class="span2"></div>
+						<div class="span4">
+							<p>
+								Copyright &copy; 2012 <a href="http://plfiorini.blogspot.com/">Pier Luigi Fiorini</a>. {% trans "All rights reserved." %}
+								<a href="{% page_url "terms" %}">{% trans "Terms" %}</a>
+							</p>
+						</div>
+						<div class="span4">
+							<a href="https://twitter.com/mauilinux/" target="_blank" title="{% trans "Follow @maui on Twitter" %}"><img src="{{ STATIC_URL }}img/glyphicons/glyphicons_392_twitter_white.png"></a>
+							<a href="https://www.facebook.com/mauios/" target="_blank" title="{% blocktrans %}"Like" Maui on Facebook{% endblocktrans %}"><img src="{{ STATIC_URL }}img/glyphicons/glyphicons_390_facebook_white.png"></a>
+							<a href="https://plus.google.com/106410682256187719404/" target="_blank" title="{% trans "Follow us on Google+" %}"><img src="{{ STATIC_URL }}img/glyphicons/glyphicons_386_google_plus_white.png"></a>
+						</div>
+						<div class="span2"></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		{% render_block "js" %}
+	</body>
 </html>

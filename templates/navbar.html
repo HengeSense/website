@@ -1,0 +1,23 @@
+{% load menu_tags %}
+
+{% for child in children %}
+<!--
+	id: {{ child.id }}
+	children: {{ child.children }}
+	selected: {{ child.selected }}
+	ancestor: {{ child.ancestor }}
+	sibling: {{ child.sibling }}
+	descendant: {{ child.descendant }}
+	get_ancestors: {{ child.get_ancestors }}
+	get_descendants: {{ child.get_descendants }}
+-->
+	<li id="dropdown-menu-{{ child.id }}" class="{% if child.children %}dropdown{% endif %} {% if child.selected or child.ancestor %}active{% endif %}">
+		<a href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}{% if child.children %}<span class="caret"></span>{% endif %}</a>
+		{% if child.children %}
+			<ul class="dropdown-menu">
+				{% show_sub_menu 100 "navbar.html" %}
+			</ul>
+		{% endif %}
+	</li>
+	{% if not forloop.last and child.sibling and not child.descendant %}<li class="divider-vertical"></li>{% endif %}
+{% endfor %}

@@ -1,0 +1,221 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags i18n %}
+
+{% block extra_css %}
+	<style type="text/css">
+		.divider-down {
+			border-bottom: 1px solid #999;
+			margin-bottom: 1em;
+		}
+
+		.divider-down:last-child {
+			border-bottom: none;
+		}
+
+		section h1 {
+			color: #777;
+			text-shadow: 0px 1px 0px rgba(255, 255, 255, .3), 0px -1px 0px rgba(0, 0, 0, .7);
+			text-rendering: auto;
+			-webkit-font-smoothing: subpixel-antialiased;
+		}
+
+		section p {
+			line-height: 1.5em;
+		}
+
+		.image-title {
+			zoom: 1;
+			margin-bottom: 1em;
+		}
+
+		.image-title img {
+			float: left;
+			margin-right: 8px;
+			margin-left: -6px;
+		}
+	</style>
+{% endblock %}
+
+
+{% block base_content %}
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span3"></div>
+
+			<div class="span6">
+				<ul class="thumbnails">
+					<li class="span4">
+						<a href="#opensource" class="thumbnail"><img src="{{ STATIC_URL }}img/logos/opensource.png" alt="">
+						<h3 style="text-align: center">{% trans "Open Source" %}</h3></a>
+					</li>
+					<li class="span4">
+						<a href="#out-of-the-box" class="thumbnail"><img src="{{ STATIC_URL }}img/icons/open-box.png" alt="">
+						<h3 style="text-align: center">{% trans "Out of the Box Experience" %}</h3></a>
+					</li>
+					<li class="span4">
+						<a href="#tech" class="thumbnail"><img src="{{ STATIC_URL }}img/icons/pinion-gear-icon.png" alt="Advanced Technology">
+						<h3 style="text-align: center">{% trans "Advanced Technology" %}</h3></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="span3"></div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3"></div>
+			<div class="span6">
+				<section class="divider-down" id="opensource">
+					<div class="image-title">
+						<img width="64" height="64" src="{{ STATIC_URL }}img/logos/opensource.png">
+						<h1>{% trans "Open Source" %}<br><small>{% trans "Participation and collaboration." %}</small></h1>
+					</div>
+					<br>
+					<p>
+						{% blocktrans %}
+							Open Source is collective power in action, the power of a worldwide
+							community that build, share and improve the software together and
+							then make it available to everyone.
+						{% endblocktrans %}
+					</p>
+					<p>
+						{% blocktrans %}
+							We want to make a system that is easy to use and give our users
+							the best out of the box user experience. This is possible thanks
+							to the worldwide Open Source community, because experts all over
+							the world make a little piece of technology available to others.
+						{% endblocktrans %}
+					</p>
+				</section>
+
+				<section class="divider-down" id="out-of-the-box">
+					<div class="image-title">
+						<img width="64" height="64" src="{{ STATIC_URL }}img/icons/open-box.png">
+						<h1>{% trans "Out of the Box Experience" %}<br><small>{% trans "Lightweight, coeherent and easy to use." %}</small></h1>
+					</div>
+					<br>
+					<p>
+						{% blocktrans %}
+							Maui aims to offer an excellent desktop experience.
+							Instead of forcing you to know every detail of your computer we expect you to turn it on, sit down and just use it.
+						{% endblocktrans %}
+					</p>
+					<p>
+						{% blocktrans %}
+							It's not the kind of Linux distribution you tried before. Instead of including a plethora of different desktop environments,
+							Maui has only one made to overcome the boundaries of the current solutions.
+							Hawaii the desktop environment, has a balanced settings policy, between the minimalist approach where almost no preferences
+							are available and the highly-customizable approach where every single detail can be changed.  Sane defaults for the needs
+							of most users will make you feel at home.
+						{% endblocktrans %}
+					</p>
+					<p>
+						{% blocktrans %}
+						The &quot;shell&quot; is modular, this means we can create variants optimized for the device where you are running Maui.
+						A &quot;shell&quot; optimized for the desktop will be the first choice available, but we plan to make a tablet shell
+						available as well. As the technology we are using will be widely adopted our applications and thirdparty's will have
+						a different UX experience for both desktop and mobile devices.
+						{% endblocktrans %}
+					</p>
+					<p>
+						{% blocktrans %}
+							We pay attention to the details in order to offer you the most exciting user experience possible.
+						{% endblocktrans %}
+					</p>
+					<p>{% trans "This is done at all levels, for example:" %}</p>
+					<ul>
+						<li>{% blocktrans %}the GUI takes into account the measure of dot density of your display so that
+							it scales accordingly to your display's DPI;{% endblocktrans %}</li>
+						<li>{% blocktrans %}notifications are unobstrusive and windows don't take focus unless explicitely
+							told to, this means that nothing will interrupt your work;{% endblocktrans %}</li>
+						<li>{% blocktrans %}multitouch devices support;{% endblocktrans %}</li>
+						<li>{% blocktrans %}fast boot, under 4 seconds in most configurations;{% endblocktrans %}</li>
+					</ul>
+				</section>
+
+				<section class="divider-down" id="tech">
+					<div class="image-title">
+						<img width="64" height="64" src="{{ STATIC_URL }}img/icons/pinion-gear-icon.png">
+						<h1>{% trans "Advanced Technology" %}<br><small>{% trans "Amazing and powerful technologies." %}</small></h1>
+					</div>
+					<br>
+					<div class="tabbable tabs-below">
+						<div class="tab-content">
+							<div class="tab-pane active" id="tech-info">
+								<span class="span2">
+									<img src="{{ STATIC_URL }}img/logos/wayland.png" width="80" height="80">
+								</span>
+								<p>
+									{% blocktrans %}
+									Wayland is the most exciting piece of technology for the Linux graphics stack in years and Maui is the
+									first Linux distribution to use it, in fact Maui couldn't be done without it.
+									{% endblocktrans %}
+								</p>
+								<p>
+									{% blocktrans %}
+									Wayland provides a method for compositing window managers to communicate directly with applications and
+									video hardware, its goal is a system where every frame is perfect, where applications are able to control
+									the rendering enough that users won't see tearing, lag, redraw or flicker.
+									{% endblocktrans %}
+								</p>
+
+								<span class="span2">
+									<img src="{{ STATIC_URL }}img/logos/qt.png" width="67" height="80">
+								</span>
+								<p>
+									{% blocktrans %}
+										Qt is an application development framework based on C++ and has been chosen
+										to implement the desktop environment and applications.
+										Over 450,000 developers in more than 70 industries have chosen Qt to
+										<a href="http://qt.nokia.com/qt-in-use">build advanced applications and devices</a>.
+									{% endblocktrans %}
+								</p>
+								<p>
+									{% blocktrans %}
+									The desktop shell is built using QtQuick, a collection of technologies that are
+									designed to help developers create intuitive, modern, and fluid user interfaces.
+									It includes QML, a CSS & JavaScript like language to ease the development of
+									dynamic and modern applications.
+									{% endblocktrans %}
+								</p>
+								<p>
+									{% blocktrans %}
+									QtQuick applications rendering is fully hardware accelerated and designed to run at 60Hz
+									and is synchronized with VSync in order to avoid tearing, lad and flickering.
+									{% endblocktrans %}
+								</p>
+								<p>
+									{% blocktrans %}
+									Qt Creator is a cross-platform IDE (integrated development environment)
+									tailored to the needs of Qt developers. It focuses on providing features that help
+									new Qt users get up and running faster, and also boost the productivity of
+									experienced Qt developers.
+									{% endblocktrans %}
+								</p>
+							</div>
+
+							<div class="tab-pane" id="tech-greff">
+								<iframe width="640" height="360" src="http://www.youtube.com/embed/MsfioYYyrUg" frameborder="0" allowfullscreen></iframe>
+							</div>
+
+							<div class="tab-pane" id="tech-qmldemos">
+								<iframe width="480" height="360" src="http://www.youtube.com/embed/1-g9uF6ApyM" frameborder="0" allowfullscreen></iframe>
+							</div>
+
+							<div class="tab-pane" id="tech-wayland">
+								<iframe width="640" height="360" src="http://www.youtube.com/embed/qdKwSrwxIYA" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tech-info" data-toggle="tab">{% trans "Advanced Technology" %}</a></li>
+							<li><a href="#tech-greff" data-toggle="tab">{% trans "Graphical Effects" %}</a></li>
+							<li><a href="#tech-qmldemos" data-toggle="tab">{% trans "QML Demos" %}</a></li>
+							<li><a href="#tech-wayland" data-toggle="tab">{% trans "Wayland" %}</a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<div class="span3"></div>
+		</div>
+	</div>
+{% endblock %}
