@@ -1,0 +1,18 @@
+[
+    {
+        "pk": 2, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "developer.maui-project.org", 
+            "name": "Developers"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "www.maui-project.org", 
+            "name": "Maui"
+        }
+    }
+]

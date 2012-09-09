@@ -1,0 +1,1365 @@
+[
+    {
+        "pk": 1, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_1_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "base_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_1_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "base_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_1_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "base_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_1_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "base_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_1_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "base_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_1_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "base_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_1_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "base_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "title_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "title_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "title_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "title_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "title_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "title_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "title_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "base_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_1_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "title_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_home_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_normal_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_home_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_normal_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_home_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_home_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_normal_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "title_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "base_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_home_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "extra_css", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_home_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "extra_css", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_normal_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_home_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "extra_css", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_normal_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_home_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "extra_css", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_normal_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_home_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "extra_css", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "template_normal_content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "thumbnails", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "sections", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 2, 
+            "parent": null, 
+            "language": "en", 
+            "level": 0, 
+            "creation_date": "2012-09-07T19:58:49.260Z", 
+            "lft": 1, 
+            "tree_id": 1, 
+            "position": 0, 
+            "placeholder": 2, 
+            "plugin_type": "TextPlugin"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 2, 
+            "parent": null, 
+            "language": "en", 
+            "level": 0, 
+            "creation_date": "2012-09-07T20:15:56.510Z", 
+            "lft": 1, 
+            "tree_id": 2, 
+            "position": 0, 
+            "placeholder": 4, 
+            "plugin_type": "TextPlugin"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 2, 
+            "parent": null, 
+            "language": "en", 
+            "level": 0, 
+            "creation_date": "2012-09-07T20:29:40.161Z", 
+            "lft": 1, 
+            "tree_id": 3, 
+            "position": 0, 
+            "placeholder": 6, 
+            "plugin_type": "TextPlugin"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 2, 
+            "parent": null, 
+            "language": "en", 
+            "level": 0, 
+            "creation_date": "2012-09-07T20:30:23.617Z", 
+            "lft": 1, 
+            "tree_id": 4, 
+            "position": 0, 
+            "placeholder": 8, 
+            "plugin_type": "TextPlugin"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 2, 
+            "parent": null, 
+            "language": "en", 
+            "level": 0, 
+            "creation_date": "2012-09-07T20:31:33.529Z", 
+            "lft": 1, 
+            "tree_id": 5, 
+            "position": 0, 
+            "placeholder": 10, 
+            "plugin_type": "TextPlugin"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 20, 
+            "parent": null, 
+            "language": "en", 
+            "level": 0, 
+            "creation_date": "2012-09-07T20:31:59.300Z", 
+            "lft": 1, 
+            "tree_id": 6, 
+            "position": 9, 
+            "placeholder": 12, 
+            "plugin_type": "TextPlugin"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 3, 
+            "parent": 6, 
+            "language": "en", 
+            "level": 1, 
+            "creation_date": "2012-09-08T05:52:04.210Z", 
+            "lft": 2, 
+            "tree_id": 6, 
+            "position": 0, 
+            "placeholder": 12, 
+            "plugin_type": "LinkPlugin"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 5, 
+            "parent": 6, 
+            "language": "en", 
+            "level": 1, 
+            "creation_date": "2012-09-08T05:52:19.532Z", 
+            "lft": 4, 
+            "tree_id": 6, 
+            "position": 1, 
+            "placeholder": 12, 
+            "plugin_type": "LinkPlugin"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 7, 
+            "parent": 6, 
+            "language": "en", 
+            "level": 1, 
+            "creation_date": "2012-09-08T05:52:34.254Z", 
+            "lft": 6, 
+            "tree_id": 6, 
+            "position": 2, 
+            "placeholder": 12, 
+            "plugin_type": "LinkPlugin"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 9, 
+            "parent": 6, 
+            "language": "en", 
+            "level": 1, 
+            "creation_date": "2012-09-08T05:52:51.677Z", 
+            "lft": 8, 
+            "tree_id": 6, 
+            "position": 3, 
+            "placeholder": 12, 
+            "plugin_type": "LinkPlugin"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 11, 
+            "parent": 6, 
+            "language": "en", 
+            "level": 1, 
+            "creation_date": "2012-09-08T05:53:07.865Z", 
+            "lft": 10, 
+            "tree_id": 6, 
+            "position": 4, 
+            "placeholder": 12, 
+            "plugin_type": "LinkPlugin"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 13, 
+            "parent": 6, 
+            "language": "en", 
+            "level": 1, 
+            "creation_date": "2012-09-08T05:53:34.272Z", 
+            "lft": 12, 
+            "tree_id": 6, 
+            "position": 5, 
+            "placeholder": 12, 
+            "plugin_type": "FilePlugin"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 15, 
+            "parent": 6, 
+            "language": "en", 
+            "level": 1, 
+            "creation_date": "2012-09-08T06:00:37.829Z", 
+            "lft": 14, 
+            "tree_id": 6, 
+            "position": 6, 
+            "placeholder": 12, 
+            "plugin_type": "LinkPlugin"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 17, 
+            "parent": 6, 
+            "language": "en", 
+            "level": 1, 
+            "creation_date": "2012-09-08T06:00:46.102Z", 
+            "lft": 16, 
+            "tree_id": 6, 
+            "position": 7, 
+            "placeholder": 12, 
+            "plugin_type": "LinkPlugin"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 19, 
+            "parent": 6, 
+            "language": "en", 
+            "level": 1, 
+            "creation_date": "2012-09-08T06:01:24.627Z", 
+            "lft": 18, 
+            "tree_id": 6, 
+            "position": 8, 
+            "placeholder": 12, 
+            "plugin_type": "LinkPlugin"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 2, 
+            "parent": null, 
+            "language": "en", 
+            "level": 0, 
+            "creation_date": "2012-09-08T04:28:39.892Z", 
+            "lft": 1, 
+            "tree_id": 7, 
+            "position": 0, 
+            "placeholder": 15, 
+            "plugin_type": "TextPlugin"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 2, 
+            "parent": null, 
+            "language": "en", 
+            "level": 0, 
+            "creation_date": "2012-09-08T04:43:32.274Z", 
+            "lft": 1, 
+            "tree_id": 8, 
+            "position": 0, 
+            "placeholder": 16, 
+            "plugin_type": "TextPlugin"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 2, 
+            "parent": null, 
+            "language": "en", 
+            "level": 0, 
+            "creation_date": "2012-09-08T04:44:18.030Z", 
+            "lft": 1, 
+            "tree_id": 9, 
+            "position": 0, 
+            "placeholder": 17, 
+            "plugin_type": "TextPlugin"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 2, 
+            "parent": null, 
+            "language": "en", 
+            "level": 0, 
+            "creation_date": "2012-09-08T04:48:25.602Z", 
+            "lft": 1, 
+            "tree_id": 10, 
+            "position": 0, 
+            "placeholder": 18, 
+            "plugin_type": "TextPlugin"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 2, 
+            "parent": null, 
+            "language": "en", 
+            "level": 0, 
+            "creation_date": "2012-09-08T04:50:05.915Z", 
+            "lft": 1, 
+            "tree_id": 11, 
+            "position": 0, 
+            "placeholder": 19, 
+            "plugin_type": "TextPlugin"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 2, 
+            "parent": null, 
+            "language": "en", 
+            "level": 0, 
+            "creation_date": "2012-09-08T04:56:58.144Z", 
+            "lft": 1, 
+            "tree_id": 12, 
+            "position": 0, 
+            "placeholder": 20, 
+            "plugin_type": "TextPlugin"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 2, 
+            "parent": null, 
+            "language": "en", 
+            "level": 0, 
+            "creation_date": "2012-09-08T04:57:57.528Z", 
+            "lft": 1, 
+            "tree_id": 13, 
+            "position": 0, 
+            "placeholder": 21, 
+            "plugin_type": "TextPlugin"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "cms.page", 
+        "fields": {
+            "rght": 2, 
+            "navigation_extenders": "", 
+            "site": 1, 
+            "creation_date": "2012-09-07T20:41:48.250Z", 
+            "lft": 1, 
+            "in_navigation": true, 
+            "reverse_id": "home", 
+            "login_required": false, 
+            "created_by": "plfiorini", 
+            "publication_end_date": null, 
+            "moderator_state": 0, 
+            "template": "template_index.html", 
+            "tree_id": 1, 
+            "placeholders": [
+                13, 
+                14, 
+                24, 
+                29
+            ], 
+            "changed_date": "2012-09-08T10:46:46.304Z", 
+            "limit_visibility_in_menu": null, 
+            "parent": null, 
+            "publisher_state": 1, 
+            "soft_root": false, 
+            "publication_date": "2012-09-07T20:42:05.891Z", 
+            "publisher_public": null, 
+            "level": 0, 
+            "changed_by": "plfiorini", 
+            "publisher_is_draft": true, 
+            "published": true
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "cms.page", 
+        "fields": {
+            "rght": 6, 
+            "navigation_extenders": "", 
+            "site": 1, 
+            "creation_date": "2012-09-07T19:57:23.537Z", 
+            "lft": 1, 
+            "in_navigation": true, 
+            "reverse_id": "about", 
+            "login_required": false, 
+            "created_by": "plfiorini", 
+            "publication_end_date": null, 
+            "moderator_state": 0, 
+            "template": "template_normal.html", 
+            "tree_id": 2, 
+            "placeholders": [
+                1, 
+                2, 
+                16, 
+                25, 
+                26
+            ], 
+            "changed_date": "2012-09-08T09:30:54.839Z", 
+            "limit_visibility_in_menu": null, 
+            "parent": null, 
+            "publisher_state": 1, 
+            "soft_root": false, 
+            "publication_date": "2012-09-07T19:59:03.166Z", 
+            "publisher_public": null, 
+            "level": 0, 
+            "changed_by": "plfiorini", 
+            "publisher_is_draft": true, 
+            "published": true
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "cms.page", 
+        "fields": {
+            "rght": 3, 
+            "navigation_extenders": "", 
+            "site": 1, 
+            "creation_date": "2012-09-07T20:29:35.930Z", 
+            "lft": 2, 
+            "in_navigation": true, 
+            "reverse_id": null, 
+            "login_required": false, 
+            "created_by": "plfiorini", 
+            "publication_end_date": null, 
+            "moderator_state": 0, 
+            "template": "template_normal.html", 
+            "tree_id": 2, 
+            "placeholders": [
+                5, 
+                6, 
+                17, 
+                27, 
+                28
+            ], 
+            "changed_date": "2012-09-08T08:45:22.650Z", 
+            "limit_visibility_in_menu": null, 
+            "parent": 1, 
+            "publisher_state": 1, 
+            "soft_root": false, 
+            "publication_date": "2012-09-07T20:29:56.897Z", 
+            "publisher_public": null, 
+            "level": 1, 
+            "changed_by": "plfiorini", 
+            "publisher_is_draft": true, 
+            "published": true
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "cms.page", 
+        "fields": {
+            "rght": 5, 
+            "navigation_extenders": "", 
+            "site": 1, 
+            "creation_date": "2012-09-07T20:31:22.524Z", 
+            "lft": 4, 
+            "in_navigation": true, 
+            "reverse_id": "code-of-conduct", 
+            "login_required": false, 
+            "created_by": "plfiorini", 
+            "publication_end_date": null, 
+            "moderator_state": 0, 
+            "template": "template_normal.html", 
+            "tree_id": 2, 
+            "placeholders": [
+                9, 
+                10, 
+                18, 
+                36, 
+                37, 
+                38
+            ], 
+            "changed_date": "2012-09-08T10:20:55.428Z", 
+            "limit_visibility_in_menu": null, 
+            "parent": 1, 
+            "publisher_state": 1, 
+            "soft_root": false, 
+            "publication_date": "2012-09-07T20:31:43.317Z", 
+            "publisher_public": null, 
+            "level": 1, 
+            "changed_by": "plfiorini", 
+            "publisher_is_draft": true, 
+            "published": true
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "cms.page", 
+        "fields": {
+            "rght": 2, 
+            "navigation_extenders": "", 
+            "site": 1, 
+            "creation_date": "2012-09-07T20:15:51.094Z", 
+            "lft": 1, 
+            "in_navigation": true, 
+            "reverse_id": "get-involved", 
+            "login_required": false, 
+            "created_by": "plfiorini", 
+            "publication_end_date": null, 
+            "moderator_state": 0, 
+            "template": "template_normal.html", 
+            "tree_id": 5, 
+            "placeholders": [
+                3, 
+                4, 
+                15, 
+                30, 
+                31
+            ], 
+            "changed_date": "2012-09-08T09:28:31.748Z", 
+            "limit_visibility_in_menu": null, 
+            "parent": null, 
+            "publisher_state": 1, 
+            "soft_root": false, 
+            "publication_date": "2012-09-07T20:16:17.565Z", 
+            "publisher_public": null, 
+            "level": 0, 
+            "changed_by": "plfiorini", 
+            "publisher_is_draft": true, 
+            "published": true
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "cms.page", 
+        "fields": {
+            "rght": 2, 
+            "navigation_extenders": "", 
+            "site": 1, 
+            "creation_date": "2012-09-07T20:30:20.653Z", 
+            "lft": 1, 
+            "in_navigation": false, 
+            "reverse_id": null, 
+            "login_required": false, 
+            "created_by": "plfiorini", 
+            "publication_end_date": null, 
+            "moderator_state": 0, 
+            "template": "template_normal.html", 
+            "tree_id": 6, 
+            "placeholders": [
+                7, 
+                8, 
+                19, 
+                39, 
+                40, 
+                41
+            ], 
+            "changed_date": "2012-09-08T10:21:16.244Z", 
+            "limit_visibility_in_menu": null, 
+            "parent": null, 
+            "publisher_state": 1, 
+            "soft_root": false, 
+            "publication_date": "2012-09-08T04:49:44.194Z", 
+            "publisher_public": null, 
+            "level": 0, 
+            "changed_by": "plfiorini", 
+            "publisher_is_draft": true, 
+            "published": true
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "cms.page", 
+        "fields": {
+            "rght": 2, 
+            "navigation_extenders": "", 
+            "site": 1, 
+            "creation_date": "2012-09-07T20:31:55.140Z", 
+            "lft": 1, 
+            "in_navigation": false, 
+            "reverse_id": "terms", 
+            "login_required": false, 
+            "created_by": "plfiorini", 
+            "publication_end_date": null, 
+            "moderator_state": 0, 
+            "template": "template_normal.html", 
+            "tree_id": 8, 
+            "placeholders": [
+                11, 
+                12, 
+                20, 
+                42, 
+                43, 
+                44
+            ], 
+            "changed_date": "2012-09-08T10:21:21.092Z", 
+            "limit_visibility_in_menu": null, 
+            "parent": null, 
+            "publisher_state": 1, 
+            "soft_root": false, 
+            "publication_date": "2012-09-07T20:32:07.377Z", 
+            "publisher_public": null, 
+            "level": 0, 
+            "changed_by": "plfiorini", 
+            "publisher_is_draft": true, 
+            "published": true
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "cms.page", 
+        "fields": {
+            "rght": 2, 
+            "navigation_extenders": "", 
+            "site": 1, 
+            "creation_date": "2012-09-08T04:57:53.630Z", 
+            "lft": 1, 
+            "in_navigation": false, 
+            "reverse_id": null, 
+            "login_required": false, 
+            "created_by": "plfiorini", 
+            "publication_end_date": null, 
+            "moderator_state": 0, 
+            "template": "template_normal.html", 
+            "tree_id": 9, 
+            "placeholders": [
+                21, 
+                22, 
+                23, 
+                45, 
+                46, 
+                47
+            ], 
+            "changed_date": "2012-09-08T10:21:26.562Z", 
+            "limit_visibility_in_menu": null, 
+            "parent": null, 
+            "publisher_state": 1, 
+            "soft_root": false, 
+            "publication_date": null, 
+            "publisher_public": null, 
+            "level": 0, 
+            "changed_by": "plfiorini", 
+            "publisher_is_draft": true, 
+            "published": false
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "cms.page", 
+        "fields": {
+            "rght": 2, 
+            "navigation_extenders": "", 
+            "site": 1, 
+            "creation_date": "2012-09-08T10:07:12.485Z", 
+            "lft": 1, 
+            "in_navigation": false, 
+            "reverse_id": "preview", 
+            "login_required": false, 
+            "created_by": "plfiorini", 
+            "publication_end_date": null, 
+            "moderator_state": 0, 
+            "template": "template_preview.html", 
+            "tree_id": 10, 
+            "placeholders": [
+                32, 
+                33, 
+                34, 
+                35, 
+                48, 
+                49
+            ], 
+            "changed_date": "2012-09-08T10:49:09.666Z", 
+            "limit_visibility_in_menu": null, 
+            "parent": null, 
+            "publisher_state": 1, 
+            "soft_root": false, 
+            "publication_date": "2012-09-08T10:11:14.572Z", 
+            "publisher_public": null, 
+            "level": 0, 
+            "changed_by": "plfiorini", 
+            "publisher_is_draft": true, 
+            "published": true
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "cms.title", 
+        "fields": {
+            "menu_title": "", 
+            "redirect": "", 
+            "meta_keywords": "", 
+            "page_title": "", 
+            "language": "en", 
+            "title": "About", 
+            "has_url_overwrite": false, 
+            "application_urls": "", 
+            "creation_date": "2012-09-07T19:57:23.545Z", 
+            "page": 1, 
+            "path": "about", 
+            "meta_description": "", 
+            "slug": "about"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "cms.title", 
+        "fields": {
+            "menu_title": "", 
+            "redirect": "", 
+            "meta_keywords": "", 
+            "page_title": "", 
+            "language": "en", 
+            "title": "Get Involved", 
+            "has_url_overwrite": false, 
+            "application_urls": "", 
+            "creation_date": "2012-09-07T20:15:51.107Z", 
+            "page": 2, 
+            "path": "get-involved", 
+            "meta_description": "", 
+            "slug": "get-involved"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "cms.title", 
+        "fields": {
+            "menu_title": "", 
+            "redirect": "", 
+            "meta_keywords": "", 
+            "page_title": "", 
+            "language": "en", 
+            "title": "Team", 
+            "has_url_overwrite": false, 
+            "application_urls": "", 
+            "creation_date": "2012-09-07T20:29:35.943Z", 
+            "page": 3, 
+            "path": "about/team", 
+            "meta_description": "", 
+            "slug": "team"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "cms.title", 
+        "fields": {
+            "menu_title": "", 
+            "redirect": "", 
+            "meta_keywords": "", 
+            "page_title": "", 
+            "language": "en", 
+            "title": "Thanks", 
+            "has_url_overwrite": false, 
+            "application_urls": "", 
+            "creation_date": "2012-09-07T20:30:20.666Z", 
+            "page": 4, 
+            "path": "thanks", 
+            "meta_description": "", 
+            "slug": "thanks"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "cms.title", 
+        "fields": {
+            "menu_title": "", 
+            "redirect": "", 
+            "meta_keywords": "", 
+            "page_title": "", 
+            "language": "en", 
+            "title": "Code of Conduct", 
+            "has_url_overwrite": false, 
+            "application_urls": "", 
+            "creation_date": "2012-09-07T20:31:22.537Z", 
+            "page": 5, 
+            "path": "about/code-conduct", 
+            "meta_description": "", 
+            "slug": "code-conduct"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "cms.title", 
+        "fields": {
+            "menu_title": "", 
+            "redirect": "", 
+            "meta_keywords": "", 
+            "page_title": "", 
+            "language": "en", 
+            "title": "Terms of Use", 
+            "has_url_overwrite": false, 
+            "application_urls": "", 
+            "creation_date": "2012-09-07T20:31:55.154Z", 
+            "page": 6, 
+            "path": "terms", 
+            "meta_description": "", 
+            "slug": "terms"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "cms.title", 
+        "fields": {
+            "menu_title": "", 
+            "redirect": "", 
+            "meta_keywords": "", 
+            "page_title": "", 
+            "language": "en", 
+            "title": "Home", 
+            "has_url_overwrite": false, 
+            "application_urls": "", 
+            "creation_date": "2012-09-07T20:41:48.263Z", 
+            "page": 7, 
+            "path": "", 
+            "meta_description": "", 
+            "slug": "home"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "cms.title", 
+        "fields": {
+            "menu_title": "", 
+            "redirect": "", 
+            "meta_keywords": "", 
+            "page_title": "", 
+            "language": "en", 
+            "title": "Download", 
+            "has_url_overwrite": false, 
+            "application_urls": "", 
+            "creation_date": "2012-09-08T04:57:53.644Z", 
+            "page": 8, 
+            "path": "download", 
+            "meta_description": "", 
+            "slug": "download"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "cms.title", 
+        "fields": {
+            "menu_title": "", 
+            "redirect": "", 
+            "meta_keywords": "", 
+            "page_title": "", 
+            "language": "en", 
+            "title": "Preview", 
+            "has_url_overwrite": false, 
+            "application_urls": "", 
+            "creation_date": "2012-09-08T10:07:12.498Z", 
+            "page": 9, 
+            "path": "preview", 
+            "meta_description": "", 
+            "slug": "preview"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "text.text", 
+        "fields": {
+            "body": "<div class=\"container-fluid\">\n<div class=\"row-fluid\">\n<div class=\"span6\">\n<h3>In the beginning</h3>\n<p>The Maui Project was started in September 2011 by Pier Luigi Fiorini, but it all began years before. Pier Luigi was always passionate with UX and ease of use and this passion lead him to try almost every desktop operating system available. The constant search for a comfortable environment made it possible for him to know BeOS R5 one of the gems that the IT industry produced. Unfortunately Be, Inc., the company behind BeOS, went bankrupt and soon an Open Source effort to recreate it was born. The project was called OpenBeOS, soon renamed to Haiku. In order to increase the hardware support and consequently the success of the project, Pier Luigi ported the Haiku API on Linux and made the GUI render using DirectFB. He soon realized that the BeAPI was lacking too many features needed for the development of modern applications and the Haiku project was not going to improve it in the following years (in fact it still is stuck in the '90s).</p>\n<p>In 2004 the first Qt 4.0 technology preview was released and it was obvious from the beginning that the framework was complete and could deliver the kind of UX that Pier Luigi was looking for.</p>\n<p>Unfortunately one piece of the puzzle was still missing: the display server. X11 was simply made for the needs of the '80s and a modern and lightweight compositor was not available.</p>\n<p>Years later Wayland showed up and there was no excuse not to start the Maui project.</p>\n</div>\n<div class=\"span6\">\n<h3>Philosophy</h3>\n<p>Our work is driven by a belief that computers should serve users not the other way around, software should be free and accessible to all.</p>\n<p>We believe that every user:</p>\n<ul>\n<li>should have the freedom to download, run, copy, distribute, study, share, change and improve their software for any purpose;</li>\n<li>should be able to use their software in the language of their choice;</li>\n<li>should be able to use all software regardless of disability;</li>\n<li>should be able to use their computer without a degree in Computer Science;</li>\n<li>should be able to use the desktop environment out of the box;</li>\n</ul>\n</div>\n</div>\n</div>"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "text.text", 
+        "fields": {
+            "body": "<div class=\"container-fluid\">\n<div class=\"row-fluid\">\n<div class=\"span6\">\n<h3>Write</h3>\n<p>Maui is always looking for writers, whether it is to create user and developer guides for our software, write content for the websites, or just to blog about the great stuff that is always happening here.</p>\n</div>\n<div class=\"span6\">\n<h3>Design</h3>\n<p>Graphics and user interface design are an important part of the Maui Project. You can help to design user interfaces and make software easy, satisfying and efficient to use. You can also assist our designers in the creation of logos, icons, websites and wallpapers.</p>\n</div>\n</div>\n<div class=\"row-fluid\">\n<div class=\"span6\">\n<h3>Code</h3>\n<p>There are many coding tasks up for grabs in Maui, both small and large. The OS is still in development so we are looking for all kind of code contributions, you don't have to be an expert to start working on the source code.</p>\n<p>All of our code is hosted on <a href=\"https://github.com/\" target=\"_blank\">Github.com</a> under two different organizations.</p>\n<p>You can find repositories for all the projects related to the desktop environment on the <a href=\"https://github.com/hawaii-desktop/\" target=\"_blank\">Hawaii organization page</a>, while repositories related to Maui (distribution packaging tools, installer, logos and marketing material and Web sites) are organized under the <a href=\"https://github.com/mauios/\" target=\"_blank\">Maui organization page</a>.</p>\n</div>\n<div class=\"span6\">\n<h3>Test</h3>\n<p>Making high quality software requires lots of testing. Reporting errors or possible improvements is a valuable way to help with the project and is a great way to start out. If you like living dangerously, you can also run our latest development code and help to provide feedback on changes as they happen.</p>\n</div>\n</div>\n</div>"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "text.text", 
+        "fields": {
+            "body": "<h2>Pier Luigi Fiorini <small>Project leader</small></h2>\n<p><a href=\"mailto:pierluigi.fiorini@maui-project.org\">Email</a>\u00a0\u00b7 IRC: plfiorini<br/>He started working on the previous incarnation of Maui back in 2004, before that he ported the Haiku API over Linux using DirectFB.<br/>When Qt 4 came out he thought it was time for a true Linux for desktop but important pieces of technology where still missing. Today thanks to Wayland and systemd he's able to resume its previous work and port to Linux the ideas of a mobile and social integrated desktop (every application has read and write access to the social services and contact list) he experimented on Haiku.</p>"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "text.text", 
+        "fields": {
+            "body": "<div class=\"container-fluid\">\n<div class=\"row-fluid\">\n<div class=\"span12\">\n<p>For the Web site:</p>\n</div>\n</div>\n<div class=\"row-fluid\">\n<div class=\"span3\"><img src=\"https://www.djangoproject.com/m/img/site/hdr_logo.gif\" alt=\"\" border=\"0\"/><br/><small><a href=\"http://www.djangoproject.com/\" target=\"_blank\">Django</a> Web framework, licensed under the <a href=\"http://www.linfo.org/bsdlicense.html\" target=\"_blank\">BSD License</a></small></div>\n<div class=\"span3\"><img src=\"http://mezzanine.jupo.org/static/img/mezzanine-logo.png\" alt=\"\" border=\"0\" width=\"189\" height=\"189\"/><br/><small><a href=\"http://mezzanine.jupo.org/\" target=\"_blank\">Mezzanine</a>, licensed under the <a href=\"http://www.linfo.org/bsdlicense.html\" target=\"_blank\">BSD License</a></small></div>\n<div class=\"span3\"><img src=\"http://1.bp.blogspot.com/_O2S_WAIhy64/TMoCNl8uFoI/AAAAAAAAAZY/GhrBPnkQfG4/s1600/new_bird_534.png\" alt=\"\" border=\"0\" width=\"133\" height=\"76\"/><br/><small><a href=\"http://twitter.github.com/bootstrap/\" target=\"_blank\">Bootstrap</a> from Twitter, licensed under the <a href=\"http://www.apache.org/licenses/LICENSE-2.0\" target=\"_blank\">Apache License v2.0</a></small></div>\n<div class=\"span3\"><img src=\"http://glyphicons.com/wp-content/themes/glyphicons/images/logo.png\" alt=\"\" border=\"0\"/><br/><small>Icons from <a href=\"http://glyphicons.com/\" target=\"_blank\">Glyphicons Free</a>, licensed under <a href=\"http://creativecommons.org/licenses/by/3.0/\" target=\"_blank\">CC BY 3.0</a>.</small></div>\n</div>\n</div>"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "text.text", 
+        "fields": {
+            "body": "<p>In the Maui community, participants from all over the world come together to create Free Software for the desktop, most specifically a desktop operating system. This is made possible by the support, hard work and enthusiasm of the people involved, including those who created and use Maui.</p>\n<p>However, with that comes a responsibility to follow a predefined set of rules that ensures the best experience for all the people involved. This document offers some guidance to ensure participants can cooperate effectively in a positive and inspiring atmosphere, and to explain how together we can strenghten and support each other.</p>\n<h2>I. Be considerate</h2>\n<p>Your work will be used by other people, and you in turn will depend on the work and actions of others. Any decision you take will affect other community members, and we expect you to take those consequences into account when making decisions.</p>\n<p>As a contributor, ensure that you give full credit for the work of others and bear in mind how your changes affect others. It is also expected that you try to follow the development schedule and guidelines.</p>\n<p>As a user, remember that contributors work hard on their part of Maui and take great pride in it. If you are frustrated your problems are more likely to be resolved if you can give accurate and well-mannered information to all concerned.</p>\n<h2>II. Be respectful</h2>\n<p>In order for the Maui community to stay healthy its members must feel comfortable and accepted. Treating one another with respect is absolutely necessary for this. In a disagreement, in the first instance assume that people mean well.</p>\n<p>We do not tolerate personal attacks, racism, sexism or any other form of discrimination. Disagreement is inevitable, from time to time, but respect for the views of others will go a long way to winning respect for your own view. Respecting other people, their work, their contributions and assuming well-meaning motivation will make community members feel comfortable and safe and will result in motivation and productivity.</p>\n<p>We expect members of our community to be respectful when dealing with other contributors, users and communities. Remember that Maui is a project open to people from all over the world of varying ages, beliefs and levels of maturity and that you may be unaware of important aspects of other cultures.</p>\n<p>Also you must be conscious of the content you produce and remarks you make.\u00a0No nudity, excess vulgarity, political content, religious content, or inappropriate content should appear in relation to Maui. Ultimately, the Maui moderators have the final say as to what constitutes as inappropriate. If in doubt, consider whether or not it\u2019s something you\u2019d show to a room full of people including children and grandmothers from around the world. If you\u2019re hesitant, don\u2019t do it.</p>\n<h2>III. Be collaborative</h2>\n<p>Collaboration is central to Maui and to the larger Free Software community:\u00a0it helps limit duplication of effort while improving the quality of the software produced. In order to avoid misunderstanding, try to be clear and concise when requesting help or giving it. Remember it is easy to misunderstand emails (especially when they are not written in your mother tongue). Ask for clarifications if unsure how something is meant; remember the first rule - assume in the first instance that people mean well.</p>\n<p>As a contributor, you should aim to collaborate with other community members, as well as with other communities that are interested in or depend on the work you do. Your work should be transparent and be fed back into the community when available, not just when Maui releases. If you wish to work on something new in existing projects, keep those projects informed of your ideas and progress.</p>\n<p>It may not always be possible to reach consensus on the implementation of an idea, so don't feel obliged to achieve this before you begin. However, always ensure that you keep the outside world informed of your work, and publish it in a way that allows outsiders to test, discuss and contribute to your efforts.</p>\n<p>Contributors on every project come and go. When you leave or disengage from the project, in whole or in part, you should do so with pride about what you have achieved and by acting responsibly towards others who come after you to continue the project.</p>\n<p>As a user, your feedback is important, as is its form. Poorly thought out comments can cause pain and the demotivation of other community members, but considerate discussion of problems can bring positive results. An encouraging word works wonders.</p>\n<h2>IV. Be pragmatic</h2>\n<p>Maui is a pragmatic community. We value tangible results over having the last word in a discussion. We defend our core values like freedom and respectful collaboration, but we don't let arguments about minor issues get in the way of achieving more important results. We are open to suggestions and welcome solutions regardless of their origin. When in doubt support a solution which helps getting things done over one which has theoretical merits, but isn't being worked on. Use the tools and methods which help getting the job done. Let decisions be taken by those who do the work.</p>\n<h2>V. Consequences</h2>\n<p>This Code of Conduct is shared by all contributors and users who engage with the Maui team in any forum, mailing list, wiki, web site, IRC channel, public events or private correspondence. Maui governance bodies will arbitrate in any dispute over the conduct of a member of the community. If you choose not to follow this Code of Conduct, we reserve the right to:\u00a0alter or remove any content you\u2019ve posted; deactivate your account on the website; kick you out of an IRC channel; ban you from the site, IRC channels, or related services; or otherwise prevent you from interacting with the community.</p>\n<p><em>This document is licensed under the Creative Commons Attribution - Share Alike 3.0 License.</em></p>\n<p><em>The author of this document would like to thank the vibrant communities that have helped shape this document with their own examples, such as the KDE, Ubuntu and elementary OS communities and their Code of Conduct.</em></p>"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "text.text", 
+        "fields": {
+            "body": "<p>By using this site, you agree to the following terms:</p>\n<ol>\n<li>We reserve the right to view, moderate, or delete any information you enter into the site.</li>\n<li>User-generated content on the site does not reflect the views of the Maui Project.</li>\n<li>You will follow the <a href=\"/code-of-conduct\">Code of Conduct</a>.</li>\n</ol>"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "text.text", 
+        "fields": {
+            "body": "<h1>Get Involved <small>Find out how you can get involed in Maui</small></h1>"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "text.text", 
+        "fields": {
+            "body": "<h1>About <small>What's Maui about?</small></h1>"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "text.text", 
+        "fields": {
+            "body": "<h1>Team <small>Who's behind Maui?</small></h1>"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "text.text", 
+        "fields": {
+            "body": "<h1>Code of Conduct <small>Community Guidelines</small></h1>"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "text.text", 
+        "fields": {
+            "body": "<h1>Thanks <small>Technologies used by this project</small></h1>"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "text.text", 
+        "fields": {
+            "body": "<h1>Terms of Use <small>for this Web site</small></h1>"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "text.text", 
+        "fields": {
+            "body": "<h1>Download <small>Choose your version</small></h1>"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "link.link", 
+        "fields": {
+            "url": "", 
+            "mailto": "", 
+            "name": "Code of Conduct", 
+            "page_link": 5
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "link.link", 
+        "fields": {
+            "url": "", 
+            "mailto": "", 
+            "name": "Code of Conduct", 
+            "page_link": 5
+        }
+    }
+]
