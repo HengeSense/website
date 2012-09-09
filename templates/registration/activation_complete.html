@@ -1,0 +1,17 @@
+{% extends "registration/base.html" %}
+
+{% load i18n %}
+
+{% block page_title %}{% trans "Activation complete" %}{% endblock %}
+
+{% block title %}
+	<h1>{% trans "Congratulations!" %}</h1>
+{% endblock %}
+
+{% block content %}
+	<div class="alert alert-success">
+		<p>{% trans "Your registration is now complete." %}
+		Click on <a href="{% url auth_login %}">this link</a> to log in.</p>
+		<p>{% trans "Live long and prosper!" %}</p>
+	</div>
+{% endblock %}

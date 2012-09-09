@@ -1,0 +1,92 @@
+{% extends "registration/base.html" %}
+
+{% load i18n gravatar %}
+
+{% block meta_title %}{% blocktrans with name=request.user.username %}{{ name }}'s profile{% endblocktrans %}{% endblock %}
+
+{% block extra_js %}
+	<script type="text/javascript">
+		$(function() {
+			var infoChange = false;
+
+			$("#changeInfoButton").click(function() {
+				infoChange = !infoChange;
+
+				if (infoChange) {
+					$("#changeInfoButton").addClass("btn-success");
+					$("#changeInfoButton").html("{% trans "Save Changes" %}");
+					$("table span").addClass("input-medium");
+				} else {
+					$("#changeInfoButton").removeClass("btn-success");
+					$("#changeInfoButton").html("{% trans "Change your information" %}");
+					$("table span").removeClass("input-medium");
+				}
+				$("table span").attr("contentEditable", infoChange);
+			});
+		});
+	</script>
+{% endblock %}
+
+{% block title %}
+	<h1>{{ request.user.first_name }} {{ request.user.last_name }}</h1>
+{% endblock %}
+
+{% block content %}
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span10">
+				<table class="table table-bordered table-striped table-condensed">
+					<tbody>
+						<tr>
+							<th>{% trans "Username" %}</th>
+							<td>{{ request.user.username }}</td>
+						</tr>
+						<tr>
+							<th>{% trans "Email Address" %}</th>
+							<td><span contentEdiable="false">{{ request.user.email }}</span></td>
+						</tr>
+						<tr>
+							<th>{% trans "First Name" %}</th>
+							<td><span contentEditable="false">{{ request.user.first_name }}</span></td>
+						</tr>
+						<tr>
+							<th>{% trans "Last Name" %}</th>
+							<td><span contentEditable="false">{{ request.user.last_name }}</span></td>
+						</tr>
+						<tr>
+							<th>{% trans "Date of Birth" %}</th>
+							<td><span contentEditable="false">{{ request.user.get_profile.date_of_birth|date:"SHORT_DATE_FORMAT" }}</span></td>
+						</tr>
+						<tr>
+							<th>{% trans "Gender" %}</th>
+							<td>{{ request.user.get_profile.get_gender_display }}</td>
+						</tr>
+						<tr>
+							<th>{% trans "Joined Since" %}</th>
+							<td>{{ request.user.date_joined|date:"SHORT_DATETIME_FORMAT" }}</td>
+						</tr>
+						<tr>
+							<th>{% trans "Last Login" %}</th>
+							<td>{{ request.user.last_login|date:"SHORT_DATETIME_FORMAT" }}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="span2">
+				<img class="thumbnail pull-right" src="{% gravatar_for_user request.user 128 %}" alt="{% trans "Profile picture" %}"
+				     rel="tooltip" title="{% trans "Your picture" %}">
+			</div>
+		</div>
+
+		<div class="row-fluid">
+			<div class="span2"></div>
+			<div class="span8">
+				<a id="changeInfoButton" rel="tooltip" title="{% trans "Change your information such as first name, last name, date of birth and email address" %}"
+				   class="btn">{% trans "Change your information" %}</a>
+				<a href="{% url auth_password_change %}" rel="tooltip" title="{% trans "Change your password" %}"
+				   class="btn">{% trans "Change Password" %}</a>
+			</div>
+			<div class="span2"></div>
+		</div>
+	</div>
+{% endblock %}

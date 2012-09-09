@@ -1,0 +1,79 @@
+{% extends "registration/base.html" %}
+
+{% load i18n %}
+
+{% block page_title %}{% trans "Sign up" %}{% endblock %}
+
+{% block content %}
+	<form method="post" action="" class="well form-horizontal" autocomplete="off">
+		<legend>{% trans "Register a new account" %}</legend>
+		{% csrf_token %}
+
+		<div class="alert alert-info">
+			<p>
+				{% blocktrans %}
+				Fill out this form (all fields are required), and your
+				account will be created; you'll be sent an email with instructions on how
+				to finish your registration.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+				We'll only use your email to send you signup instructions. We hate spam
+				as much as you do.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+				This account will let you log into the ticket tracker, claim tickets,
+				and be exempt from spam filtering.
+				{% endblocktrans %}
+			</p>
+		</div>
+
+		{% if form.errors %}
+			<div class="alert alert-error">{% trans "Please correct the errors below." %}</div>
+		{% endif %}
+
+		<div class="control-group{% if form.username.errors %} error{% endif %}">
+			<label class="control-label" for="id_username">{% trans "Username:" %}</label>
+			<div class="controls">
+				{{ form.username }}
+				{% if form.username.errors %}<span class="help-inline">{{ form.username.errors|join:", " }}</span>{% endif %}</dt>
+			</div>
+		</div>
+
+		<div class="control-group{% if form.email.errors %} error{% endif %}">
+			<label class="control-label" for="id_email">{% trans "Email:" %}</label>
+			<div class="controls">
+				{{ form.email }}
+				{% if form.email.errors %}<span class="help-inline">{{ form.email.errors|join:", " }}</span>{% endif %}</dt>
+			</div>
+		</div>
+
+		<div class="control-group{% if form.password1.errors %} error{% endif %}">
+			<label class="control-label" for="id_password1">{% trans "Password:" %}</label>
+			<div class="controls">
+				{{ form.password1 }}
+				{% if form.password1.errors %}<span class="help-inline">{{ form.password1.errors|join:", " }}</span>{% endif %}</dt>
+			</div>
+		</div>
+
+		<div class="control-group{% if form.password2.errors %} error{% endif %}">
+			<label class="control-label" for="id_password2">{% trans "Password (type again to catch typos):" %}</label>
+			<div class="controls">
+				{{ form.password2 }}
+				{% if form.password2.errors %}<span class="help-inline">{{ form.password2.errors|join:", " }}</span>{% endif %}</dt>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="controls">
+				<input class="btn btn-primary" type="submit" value="{% trans "Register" %}">
+				<p>If you <u>already</u> have an account, you can <a href="{% url auth_login %}">log in</a> with it.
+			</div>
+		</div>
+	</form>
+{% endblock %}

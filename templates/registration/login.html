@@ -1,0 +1,40 @@
+{% extends "registration/base.html" %}
+
+{% load i18n %}
+
+{% block page_title %}{% trans "Log in" %}{% endblock %}
+
+{% block content %}
+	<form method="post" action="?next={{ next|default:"/" }}" class="well form-horizontal">
+		<legend>{% trans "Log in with an already registered account" %}</legend>
+		{% csrf_token %}
+
+		{% if form.errors %}
+			<div class="alert alert-error">{% trans "Please correct the errors below." %}</div>
+		{% endif %}
+
+		<div class="control-group{% if form.username.errors %} error{% endif %}">
+			<label class="control-label" for="id_username">{% trans "Username:" %}</label>
+			<div class="controls">
+				{{ form.username }}
+				{% if form.username.errors %}<span class="help-inline">{{ form.username.errors|join:", " }}</span>{% endif %}</dt>
+			</div>
+		</div>
+
+		<div class="control-group{% if form.password.errors %} error{% endif %}">
+			<label class="control-label" for="id_password">{% trans "Password:" %}</label>
+			<div class="controls">
+				{{ form.password }}
+				{% if form.password.errors %}<span class="help-inline">{{ form.password.errors|join:", " }}</span>{% endif %}</dt>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="controls">
+				<input class="btn btn-primary" type="submit" value="{% trans "Log in" %}">
+				<p>If you <u>don't</u> have an account, you can <a href="{% url registration_register %}">sign up</a> for one,<br>
+				or if you have lost your password you can <a href="{% url auth_password_reset %}">reset it</a>.</p>
+			</div>
+		</div>
+	</form>
+{% endblock %}

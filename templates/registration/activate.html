@@ -1,0 +1,43 @@
+{% extends "registration/base.html" %}
+
+{% load i18n %}
+
+{% block page_title %}{% trans "Account activation" %}{% endblock %}
+
+{% block title %}
+	<h1>{% trans "Account Activation" %}</h1>
+{% endblock %}
+
+{% block content %}
+	{% load humanize %}
+
+	{% if account %}
+		<div class="alert alert-success">
+			<p>{% trans "Thanks for signing up!" %}
+			Click on <a href="{% url auth_login %}">this link</a> to log in.</p>
+			<p>{% trans "Live long and prosper!" %}</p>
+		</div>
+	{% else %}
+		<div class="alert alert-error">
+			<p>
+				{% blocktrans %}
+				Sorry, it didn't work. Either your activation link was incorrect, or
+				the activation key for your account has expired.
+				{% endblocktrans %}
+
+				<br>
+
+				{% blocktrans %}
+				<strong>Remember</strong> that activation keys are only valid for a limited time after registration.
+				{% endblocktrans %}
+			</p>
+			<p>
+				{% blocktrans %}
+				For debugging purpose here's the activaction key you are using: <code>{{ activation_key }}</code>
+				{% endblocktrans %}
+				<br>
+				{% trans "This must be the same key you received in your mail box." %}
+			</p>
+		</div>
+	{% endif %}
+{% endblock %}

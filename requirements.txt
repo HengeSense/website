@@ -3,3 +3,5 @@ django-cms
 south
 django-tinymce
 django-reversion
+django-gravatar
+django-registration

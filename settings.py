@@ -128,6 +128,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.admindocs',
+    'django.contrib.humanize',
+    'gravatar',
+    'registration',
     'cms',
     'mptt',
     'menus',
@@ -145,6 +148,7 @@ INSTALLED_APPS = (
     'cms.plugins.video',
     'cms.plugins.twitter',
     'cms.plugins.inherit',
+    'website',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -176,6 +180,12 @@ LOGGING = {
     }
 }
 
+# Activation window for accounts in days (django-registration).
+ACCOUNT_ACTIVATION_DAYS = 2
+
+# Custom user profile.
+AUTH_PROFILE_MODULE = 'website.UserProfile'
+
 # Enable soft-roots.
 CMS_SOFTROOT = True
 
@@ -199,5 +209,13 @@ LANGUAGES = [
 # defined per machine.
 try:
     from local_settings import *
+except ImportError:
+    pass
+
+# Allow any private settings to be defined in private_settings.py
+# which should be ignore by the version control system allowing for
+# settings to be hidden to other contributors.
+try:
+    from private_settings import *
 except ImportError:
     pass

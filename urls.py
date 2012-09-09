@@ -4,8 +4,12 @@ from django.conf import settings
 from django.contrib import admin
 admin.autodiscover()
 
+from website.views import ProfileView
+
 urlpatterns = patterns('',
-    (r'^admin/', include(admin.site.urls)),
+    url(r'^accounts/profile/$', ProfileView.as_view(), name="auth_profile"),
+    url(r'^accounts/', include('registration.backends.default.urls')),
+    url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('cms.urls')),
 )
 
