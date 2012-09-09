@@ -4,4 +4,5 @@
 .DS_Store
 .coverage
 local_settings.py
+private_settings.py
 static/media/CACHE/*
