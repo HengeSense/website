@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="{% page_attribute "meta_keywords" %}">
 		<meta name="description" content="{% page_attribute "meta_description" %}">
-		<title>{% page_attribute "page_title" %}</title>
+		<title>{% block page_title %}{% page_attribute "page_title" %}{% endblock %}</title>
 		<link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
 
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
@@ -23,6 +23,12 @@
 		<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+
+		<script type="text/javascript">
+			$(function() {
+				$("[rel='tooltip']").tooltip();
+			});
+		</script>
 
 		{% block extra_head %}{% endblock %}
 
@@ -52,6 +58,18 @@
         
 						<ul class="nav pull-left">
 							{% show_menu 0 100 0 100 "navbar.html" %}
+						</ul>
+
+						<ul class="nav pull-right">
+							{% if request.user.is_authenticated %}
+								<li id="dropdown-accounts-profile"><a href="{% url auth_profile %}">{% trans "My Account" %}</a></li>
+								{% if request.user.is_superuser %}
+									<li id="dropdown-admin"><a href="/admin" target="_blank">{% trans "Admin" %}</a></li>
+								{% endif %}
+								<li id="dropdown-accounts-logout"><a href="{% url auth_logout %}">{% trans "Log out" %}</a></li>
+							{% else %}
+								<li id="dropdown-accounts-login"><a href="{% url auth_login %}">{% trans "Log In" %}</a></li>
+							{% endif %}
 						</ul>
 					</div>
 				</div>
