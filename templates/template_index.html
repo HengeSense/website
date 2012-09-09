@@ -4,9 +4,7 @@
 {% block extra_js %}
 	<script type="text/javascript">
 		$(function() {
-			$("#moreinfo").click(function() {
-				window.location.href = "{% page_url "preview" %}";
-			});
+			$("a[rel='tooltip']").tooltip();
 		});
 	</script>
 {% endblock %}
@@ -35,7 +33,8 @@
 				<div class="span8">
 					<div class="span4"></div>
 					<div class="span4">
-						<a id="moreinfo" class="btn btn-primary btn-large">More Information</a>
+						<a href="{% page_url "preview" %}" class="btn btn-info btn-large" rel="tooltip" title="{% trans "Read more about Maui" %}">{% trans "More Information..." %}</a>
+						<a href="" class="btn btn-primary btn-large" rel="tooltip" title="{% trans "Register in order to get notified when Maui TP1 comes out" %}">{% trans "Get Notified..." %}</a>
 					</div>
 					<div class="span4"></div>
 				</div>
