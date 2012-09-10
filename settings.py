@@ -148,6 +148,7 @@ INSTALLED_APPS = (
     'cms.plugins.video',
     'cms.plugins.twitter',
     'cms.plugins.inherit',
+    'apps.cms.plugins.faq',
     'website',
 )
 
