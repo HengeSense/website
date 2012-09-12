@@ -19,3 +19,7 @@ if settings.DEBUG:
         {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
     url(r'', include('django.contrib.staticfiles.urls')),
 ) + urlpatterns
+
+# Adds ``STATIC_URL`` to the context of error pages, so that error
+# pages can use JS, CSS and images.
+handler500 = "mauiwebsite.core.views.server_error"

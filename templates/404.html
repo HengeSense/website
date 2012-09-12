@@ -1,0 +1,30 @@
+{% extends "base_simple.html" %}
+
+{% block extra_css %}
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/httperror.css" type="text/css">
+{% endblock %}
+
+{% block page_title %}Page Not Found{% endblock %}
+
+{% block body_id %}httperror{% endblock %}
+
+{% block base_content %}
+	<div class="span5 httperror">
+		<p class="httperror">Not Found!</p>
+		<h2>404.</h2>
+		<p>We can't find what you're looking for.</p>
+		<p>Return to <a href="/" class="link" rel="tooltip" title="Home Page">home page</a>.
+{% comment %}
+		<p>Return to <a href="/" class="link" rel="tooltip" title="Home Page">home page</a> or try search for the page here:
+			<div class="controls">
+				<form action="{% url search %}">
+					<div class="input-prepend input-append">
+						<span class="add-on"><i class="icon-search"></i></span><input class="span3" size="16" type="text" placeholder="{% trans "Type what you are looking for" %}" required><input type="submit" name="submit" value="Search" class="btn btn-inverse">
+					</div>
+				</form>
+{% endcomment %}
+			</div>
+		</p>
+	</div>
+	<div class="span7"></div>
+{% endblock %}
