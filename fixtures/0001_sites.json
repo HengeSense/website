@@ -14,5 +14,12 @@
             "domain": "www.maui-project.org", 
             "name": "Maui"
         }
+    }, 
+    {
+        "pk": 1, 
+        "model": "google_analytics.googleanalytics", 
+        "fields": {
+            "web_property_id": "UA-33602199-1"
+        }
     }
 ]
