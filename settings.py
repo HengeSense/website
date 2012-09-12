@@ -15,6 +15,12 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+# Default email address to use for various automated correspondence from the site manager(s).
+DEFAULT_EMAIL_FROM = "noreply@maui-project.org"
+
+# The backend to use for sending emails.
+EMAIL_BACKEND = "mauiwebsite.core.mail.backends.sendmail.EmailBackend"
+
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
