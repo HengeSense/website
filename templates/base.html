@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load cms_tags sekizai_tags menu_tags i18n %}
+{% load cms_tags sekizai_tags menu_tags i18n analytics %}
 <html lang="en" dir="ltr">
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -100,6 +100,7 @@
 			</div>
 		</footer>
 
+		{% analytics %}
 		{% render_block "js" %}
 	</body>
 </html>

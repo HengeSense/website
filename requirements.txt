@@ -5,3 +5,4 @@ django-tinymce
 django-reversion
 django-gravatar
 django-registration
+django-google-analytics

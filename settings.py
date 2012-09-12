@@ -138,6 +138,7 @@ INSTALLED_APPS = (
     'sekizai',
 #    'tinymce',
     'reversion',
+    'google_analytics',
     'cms.plugins.file',
     'cms.plugins.googlemap',
     'cms.plugins.link',
@@ -186,6 +187,9 @@ ACCOUNT_ACTIVATION_DAYS = 2
 
 # Custom user profile.
 AUTH_PROFILE_MODULE = 'website.UserProfile'
+
+# Enable Google Analytics.
+GOOGLE_ANALYTICS_MODEL = True
 
 # Enable soft-roots.
 CMS_SOFTROOT = True
