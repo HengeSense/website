@@ -88,8 +88,17 @@ body > .hero-unit {
 }
 */
 
+/* Image title */
+.image-title {
+	zoom: 1;
+	margin-bottom: 1em;
+}
 
-
+.image-title img {
+	float: left;
+	margin-right: 8px;
+	margin-left: -6px;
+}
 
 /* General elements */
 h3 {margin:10px 0;}
