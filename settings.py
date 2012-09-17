@@ -142,7 +142,7 @@ INSTALLED_APPS = (
     'menus',
     'south',
     'sekizai',
-#    'tinymce',
+    'tinymce',
     'reversion',
     'google_analytics',
     'cms.plugins.file',
