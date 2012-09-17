@@ -6,8 +6,6 @@ from django.utils.text import truncate_words
 from django.conf import settings
 from cms.plugins.text.models import AbstractText
 
-
-#get custom css from settings or use default
 CMSPLUGIN_FAQENTRY_CSS_CHOICES = getattr(settings,"CMSPLUGIN_FAQENTRY_CSS_CHOICES", (('1', 'featured'),) )
 
 class FaqEntry(AbstractText):

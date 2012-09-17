@@ -1,6 +1,6 @@
+{% load i18n %}
+
 <div class="faq-entry{% if css %} {{ css }}{% endif %}">
-	<div><a name="{{ topic|safe }}">{{ topic|safe }}</a></div>
-	<div>
-		{{ body|safe }}
-	</div>
+	<p><strong><a name="{{ topic|safe }}">{{ topic|safe }}</a></strong></p>
+	<p>{{ body|safe }}</p>
 </div>
