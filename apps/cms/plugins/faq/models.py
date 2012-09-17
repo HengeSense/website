@@ -18,8 +18,6 @@ class FaqEntry(AbstractText):
     def __unicode__(self):
         return u"%s" % (truncate_words(self.topic, 5)[:30]+"...")
 
-
-#get custom css from settings or use default
 CMSPLUGIN_FAQLIST_CSS_CHOICES = getattr(settings,"CMSPLUGIN_FAQLIST_CSS_CHOICES", (('1', 'faq-list'),('2', 'faq-list-small'),) )
 
 class FaqList(CMSPlugin):
@@ -30,16 +28,3 @@ class FaqList(CMSPlugin):
 
     def __unicode__(self):
         return u"%s" % (self.page.get_page_title())
-
-#get custom css from settings or use default
-CMSPLUGIN_FAQENTRYLINK_CSS_CHOICES = getattr(settings,"CMSPLUGIN_FAQENTRYLINK_CSS_CHOICES", (('1', 'faq-entry-link-small'),) )
-
-class FaqEntryLink(CMSPlugin):
-    """Model to give FaqEntryLink plugin various options"""
-    link = models.ForeignKey(FaqEntry, blank=True, null=True, verbose_name=_('Linked FAQ Entry'), help_text=_('Leave empty for random'))
-    truncate_body = models.PositiveSmallIntegerField(_('Truncate words'), default=5, help_text=_('Truncate FAQ Entry body by this many words; zero means Django default'))
-    show_body = models.BooleanField(_('Show FAQ Entry body'),default=True)
-    css = models.CharField(_('CSS class'), max_length=1, choices=CMSPLUGIN_FAQENTRYLINK_CSS_CHOICES, blank=True, help_text=_('Additional CSS class to apply'))
-
-    def __unicode__(self):
-        return u"FAQ Entry %s" % (self.link)
