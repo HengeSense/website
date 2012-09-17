@@ -1,8 +1,10 @@
 <div class="faq-list">
 	<ul>
 		{% for faq_entry in faq_list %}
-			<li{% if css %} class="{{ css }}"{% endif %}><a href="#{{ faq_entry.topic|safe }}">{{ faq_entry.topic|safe }}</a>
-			<p>{{ faq_entry.body|safe|truncatewords_html:10 }}
+			<li{% if css %} class="{{ css }}"{% endif %}>
+				<a href="#{{ faq_entry.topic|safe }}">{{ faq_entry.topic|safe }}</a><br>
+				{{ faq_entry.body|safe|truncatewords_html:10 }}
+			</li>
 			<hr>
 		{% endfor %}
 	</ul>
