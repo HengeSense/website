@@ -15,7 +15,7 @@
 		<a href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}{% if child.children %}<span class="caret"></span>{% endif %}</a>
 		{% if child.children %}
 			<ul class="dropdown-menu">
-				{% show_menu 1 100 100 100 "navbar.html" %}
+				{% include "navbar.html" with children=child.children %}
 			</ul>
 		{% endif %}
 	</li>
