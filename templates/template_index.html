@@ -11,9 +11,8 @@
 					<h2>{% trans "...is under development" %}</h2>
 					<p>
 						{% blocktrans %}
-							Our monkeys are working very hard to deliver the first tech preview.<br>
-							Click the button to discover what they are doing and get a notification when
-							the first technology preview will be available.
+							Our monkeys are working very hard to deliver the first tech preview.
+							Discover what they are doing and stay in touch with us.
 						{% endblocktrans %}
 					</p>
 				</div>
@@ -23,12 +22,10 @@
 			<div class="row-fluid">
 				<div class="span2"></div>
 				<div class="span8">
-					<div class="span4"></div>
-					<div class="span4">
+					<div style="text-align: center">
 						<a href="{% page_url "preview" %}" class="btn btn-info btn-large" rel="tooltip" title="{% trans "Read more about Maui" %}">{% trans "More Information..." %}</a>
-						<a href="{% url registration_register %}" class="btn btn-primary btn-large" rel="tooltip" title="{% trans "Register in order to get notified when Maui TP1 comes out" %}">{% trans "Get Notified..." %}</a>
+						<a href="{% url registration_register %}" class="btn btn-primary btn-large" rel="tooltip" title="{% trans "Register in order to get notified when Maui TP1 comes out" %}">{% trans "Stay in Touch..." %}</a>
 					</div>
-					<div class="span4"></div>
 				</div>
 				<div class="span2"></div>
 			</div>
