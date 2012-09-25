@@ -126,6 +126,7 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    # Django apps:
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -135,16 +136,23 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.humanize',
+    # Gravatar support:
     'gravatar',
+    # Registration:
     'registration',
+    # Django CMS:
     'cms',
     'mptt',
     'menus',
     'south',
     'sekizai',
+    # TinyMCE support for Django CMS:
     'tinymce',
+    # Versioning for Django CMS contents:
     'reversion',
+    # Google Analytics support:
     'google_analytics',
+    # Django CMS plugins:
     'cms.plugins.file',
     'cms.plugins.googlemap',
     'cms.plugins.link',
@@ -155,6 +163,7 @@ INSTALLED_APPS = (
     'cms.plugins.video',
     'cms.plugins.twitter',
     'cms.plugins.inherit',
+    # From this site:
     'apps.cms.plugins.faq',
     'website',
 )
