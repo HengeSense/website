@@ -4,7 +4,7 @@ from cms.utils.moderator import get_cmsplugin_queryset
 from cms.utils import get_language_from_request
 from cms.models import CMSPlugin, Page
 from django.utils.translation import ugettext_lazy as _
-from models import FaqEntry, FaqList, FaqEntryLink
+from models import FaqEntry, FaqList
 from cms.plugins.text.cms_plugins import TextPlugin
 from cms.plugins.text.utils import plugin_tags_to_user_html
 from django.utils.text import truncate_words
