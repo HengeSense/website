@@ -231,6 +231,10 @@ LANGUAGES = [
     ('en', 'English'),
 ]
 
+# Whether moderated comments will be hidden or replaced by
+# a "this comment has been removed by the site staff" warning.
+COMMENTS_HIDE_REMOVED = False
+
 # Allow any settings to be defined in local_settings.py which should be
 # ignored in your version control system allowing for settings to be
 # defined per machine.

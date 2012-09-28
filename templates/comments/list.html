@@ -1,0 +1,13 @@
+{% load i18n gravatar %}
+
+<div class="page-header"><h3>{% trans "Comments" %}</h3></div>
+
+<ul id="comments">
+	{% for comment in comment_list %}
+		<li>
+			<img class="pull-left img-polaroid" style="margin-right: 0.8em" src="{% gravatar_for_email comment.user_email 80 %}">
+			<span class="muted">{% blocktrans with name=comment.user_name submit_date=comment.submit_date|date:"DATETIME_FORMAT" %}Posted by {{ name }} on {{ submit_date }}{% endblocktrans %}</span>
+			<p>{{ comment.comment|linebreaks }}</p>
+		</li>
+	{% endfor %}
+</ul>

@@ -1,0 +1,10 @@
+{% extends "comments/base.html" %}
+{% load i18n %}
+
+{% block page_title %}{% trans "Thanks for commenting" %}{% endblock %}
+
+{% block title %}<h1>{% trans "Thanks for Commenting" %}</h1>{% endblock %}
+
+{% block main %}
+	<div class="alert alert-success">{% trans "Thank you for your comment." %}</div>
+{% endblock %}

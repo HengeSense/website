@@ -1,0 +1,15 @@
+{% extends "comments/base.html" %}
+{% load i18n %}
+
+{% block page_title %}{% trans "Preview your comment" %}{% endblock %}
+
+{% block title %}<h1>{% trans "Preview your Comment" %}</h1>{% endblock %}
+
+{% block main %}
+	{% load comments %}
+
+	<form action="{% comment_form_target %}" method="post">{% csrf_token %}
+		{% if next %}<div><input type="hidden" name="next" value="{{ next }}" /></div>{% endif %}
+		{% include "comments/form.html" with form=form %}
+	</form>
+{% endblock %}

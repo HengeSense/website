@@ -1,0 +1,36 @@
+{% load i18n comments %}
+
+{% if form.errors %}
+	<div class="alert alert-error">{% blocktrans count counter=form.errors|length %}Please correct the error below.{% plural %}Please correct the errors below.{% endblocktrans %}</div>
+{% else %}
+	<blockquote>{{ comment|linebreaks }}</blockquote>
+{% endif %}
+
+{% for field in form %}
+	{% if field.is_hidden %}
+		<div>{{ field }}</div>
+	{% else %}
+		<div class="control-group{% if field.errors %} error{% endif %}"
+				{% ifequal field.name "honeypot" %} style="display: none"{% endifequal %}
+				{% if request.user.is_authenticated and field.name == "name" %} style="display: none"{% endif %}
+				{% if request.user.is_authenticated and field.name == "email" %} style="display: none"{% endif %}
+		>
+			{{ field.label_tag }}
+			<div class="controls">
+				{{ field }}
+				{% if field.errors %}
+					<span class="help-inline">
+						{% for error in field.errors %}
+							{{ error }}{% if not forloop.last %}<br>{% endif %}
+						{% endfor %}
+					</span>
+				{% endif %}
+			</div>
+		</div>
+	{% endif %}
+{% endfor %}
+
+<div class="form-actions">
+	<input class="btn" type="submit" name="preview" value="{% trans "Preview" %}">
+	<input class="btn btn-primary" type="submit" name="submit" value="{% trans "Post" %}">
+</div>
