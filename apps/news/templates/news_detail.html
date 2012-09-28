@@ -1,5 +1,9 @@
 {% extends "news_base.html" %}
-{% load menu_tags i18n comments %}
+{% load menu_tags i18n comments gravatar %}
+
+{% block extra_css %}
+		<link rel="stylesheet" href="{{ STATIC_URL }}css/maui.news.css" type="text/css">
+{% endblock %}
 
 {% block page_title %}{{ news.title }}{% endblock %}
 
@@ -19,15 +23,34 @@
 		{{ news.body|safe|urlizetrunc:20 }}
 	</p>
 
-	{% for tag in news.tags.all %}
-		<a href="{% url news_tags tag=tag.name %}"><span class="label label-info tag-weight-1">{{ tag.name }}</span></a>
+	<p>
+		{% for tag in news.tags.all %}
+			<a href="{% url news_tags tag=tag.name %}"><span class="label label-info tag-weight-1">{{ tag.name }}</span></a>
+		{% endfor %}
+	</p>
+
+	{% get_comment_list for news as comments %}
+	{% if comments %}<div class="page-header"><h3>{% trans "Comments" %}</h3></div>{% endif %}
+	{% for comment in comments %}
+		<div class="row-fluid">
+			<div class="pull-left">
+				<img class="img-polaroid" style="margin-right: 1em" src="{% gravatar_for_email comment.user_email 80 %}">
+			</div>
+			<p>
+				<span class="dimed">
+					{% blocktrans with name=comment.user_name submit_date=comment.submit_date|date:"DATETIME_FORMAT" %}Posted by {{ name }} on {{ submit_date }}{% endblocktrans %}
+				</span>
+			</p>
+			<blockquote>
+				<p>{{ comment.comment }}</p>
+			</blockquote>
+		</div>
+		{% if not forloop.last %}<hr>{% endif %}
 	{% endfor %}
 
-	{% render_comment_list for news %}
-
 	{% get_comment_form for news as form %}
+	<div class="page-header"><h3>{% trans "Post a Comment" %}</h3></div>
 	<form action="{% comment_form_target %}" method="post">
-		<legend>{% trans "Post a comment" %}</legend>
 		{% csrf_token %}
 		<input type="hidden" name="next" value="{% url news-details news.slug %}">
 
