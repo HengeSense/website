@@ -1,10 +1,9 @@
 <script type="text/javascript">
 <!--
     jQuery('#id_{{ name }}').wymeditor({
-        langPath: "{{ NEWS_MEDIA_URL }}wymeditor/lang/",
         lang: '{{ lang }}',
         skin: 'django',
-        skinPath: "{{ NEWS_MEDIA_URL }}javascript/wymeditor/skins/django/",
+        skinPath: "{{ STATIC_URL }}cms/js/wymeditor/skins/django/",
         updateSelector: 'form',
         updateEvent: 'submit',
         containersItems: [
