@@ -9,15 +9,15 @@ admin.site.register(Category, CategoryAdmin)
 
 class NewsAdmin(admin.ModelAdmin):
 	prepopulated_fields = {"slug": ("title",)}
-	list_display = ("title", "category", "user", "created_at", "published")
+	list_display = ("title", "category", "user", "created_at", "published", "comments_enabled")
 	search_fields = ["body", "title", "category"]
 	ordering = ("-created_at",)
-	list_filter = ("created_at", "updated_at", "published")
+	list_filter = ("created_at", "updated_at", "published", "comments_enabled")
 	
 	fieldsets = [
 		("General", {"fields": ["user", "site", "title", "slug"],}),
 		("", {"fields": ["category", "body", "tags"]}),
-		("Published", {"fields": ["published"]}),
+		("Published", {"fields": ["published", "comments_enabled"]}),
 	]
 	form = NewsAdminModelForm
 admin.site.register(News, NewsAdmin)
