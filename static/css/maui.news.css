@@ -2,3 +2,9 @@
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 0.8em;
 }
+
+hr {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
