@@ -20,7 +20,7 @@
 				<div class="span1"><span class="label">{{ news_obj.category.name }}</span></div>
 				<div class="span11">
 					<div class="news-row">
-						<h4><a href="{{ news.get_absolute_url }}">{{ news_obj.title }}</a></h4>
+						<h4><a href="{{ news_obj.get_absolute_url }}">{{ news_obj.title }}</a></h4>
 						<span class="news-date">{{ news_obj.created_at|naturaltime }}, {{ news_obj.user.get_full_name }}</span>
 						<p>
 							{{ news_obj.body|striptags|linebreaksbr|urlizetrunc:20|safe|truncatewords:words }}
@@ -37,7 +37,7 @@
 									</ul>
 								{% endif %}
 							</div>
-							<div class="span2"><a class="btn btn-primary" href="{% url news-details news_obj.slug %}">{% trans "Read More" %}</a></div>
+							<div class="span2"><a class="btn btn-primary" href="{% url news_details news_obj.slug %}">{% trans "Read More" %}</a></div>
 						</div>
 					</div>
 				</div>
@@ -47,7 +47,7 @@
 		    <span class="step-links">
 		        {% if news.has_previous %}
 		        	<span class="paginator-left">
-		            	<a href="{% url list-news news.previous_page_number %}">&lt;&lt; {% trans "newer" %}</a>
+		            	<a href="{% url list_news news.previous_page_number %}">&lt;&lt; {% trans "newer" %}</a>
 		            </span>
 		        {% endif %}
 				
@@ -57,7 +57,7 @@
 		        		<span class="current-page">{{ number }}</span>
 		        		{% else %}
 		        		<span class="no-current-page">
-		        			<a href="{% url list-news number %}">{{ number }}</a>
+		        			<a href="{% url list_news number %}">{{ number }}</a>
 				        </span>
 		        		{% endifequal %}
 		        	{% endfor %}
@@ -65,7 +65,7 @@
 		
 		        {% if news.has_next %}
 		        	<span class="paginator-right">
-		            	<a href="{% url list-news news.next_page_number %}">{% trans "older" %} &gt;&gt;</a>
+		            	<a href="{% url list_news news.next_page_number %}">{% trans "older" %} &gt;&gt;</a>
 		            </span>
 		        {% endif %}
 		    </span>

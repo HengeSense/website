@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
+from django.core.urlresolvers import reverse
 from django.contrib.auth.models import User
 from django.contrib.sites.models import Site
 from django.contrib.comments.moderation import CommentModerator, moderator
@@ -37,7 +38,7 @@ class News(models.Model):
 		return u"%s" % self.title
 
 	def get_absolute_url(self):
-		return "/news/%s/" % self.slug
+		return reverse("news_details", kwargs={"slug": self.slug})
 
 	class Meta:
 		verbose_name = _("News")
