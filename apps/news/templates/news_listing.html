@@ -21,7 +21,7 @@
 				<div class="span11">
 					<div class="news-row">
 						<h4><a href="{{ news_obj.get_absolute_url }}">{{ news_obj.title }}</a></h4>
-						<span class="news-date">{{ news_obj.created_at|naturaltime }}, {{ news_obj.user.get_full_name }}</span>
+						<span class="muted">{{ news_obj.created_at|naturaltime }}, {{ news_obj.user.get_full_name }}</span>
 						<p>
 							{{ news_obj.body|striptags|linebreaksbr|urlizetrunc:20|safe|truncatewords:words }}
 						</p>
@@ -30,11 +30,11 @@
 							<div class="span10">
 								<em class="muted">{% blocktrans %}{{ comment_count }} comments{% endblocktrans %}</em>
 								{% if tag %}
-									&nbsp;
-									{% for curtag in news_obj.tags.all %}
-										<a href="{% url news_tags tag=curtag.name %}"><span class="label label-info tag-weight-1">{{ curtag.name }}</span></a>
-									{% endfor %}
-									</ul>
+									<p class="tags">
+										{% for curtag in news_obj.tags.all %}
+											<a href="{% url news_tags tag=curtag.name %}"><span class="label label-info tag-weight-1">{{ curtag.name }}</span></a>
+										{% endfor %}
+									</p>
 								{% endif %}
 							</div>
 							<div class="span2"><a class="btn btn-primary" href="{% url news_details news_obj.slug %}">{% trans "Read More" %}</a></div>
