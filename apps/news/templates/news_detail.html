@@ -19,6 +19,10 @@
 		{{ news.body|safe|urlizetrunc:20 }}
 	</p>
 
+	{% for tag in news.tags.all %}
+		<a href="{% url news_tags tag=tag.name %}"><span class="label label-info tag-weight-1">{{ tag.name }}</span></a>
+	{% endfor %}
+
 	{% render_comment_list for news %}
 
 	{% get_comment_form for news as form %}

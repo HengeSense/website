@@ -16,7 +16,7 @@ class NewsAdmin(admin.ModelAdmin):
 	
 	fieldsets = [
 		("General", {"fields": ["user", "site", "title", "slug"],}),
-		("", {"fields": ["category", "body"]}),
+		("", {"fields": ["category", "body", "tags"]}),
 		("Published", {"fields": ["published"]}),
 	]
 	form = NewsAdminModelForm

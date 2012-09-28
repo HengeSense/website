@@ -154,6 +154,8 @@ INSTALLED_APPS = (
     'reversion',
     # Google Analytics support:
     'google_analytics',
+    # Django Taggit:
+    'taggit',
     # Django CMS plugins:
     'cms.plugins.file',
     'cms.plugins.googlemap',

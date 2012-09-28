@@ -10,6 +10,10 @@
 {% block title %}<h1>{% trans "News" %} <small>{% trans "News & Updates" %}</small></h1>{% endblock %}
 
 {% block main %}
+	{% if tag %}
+		<div class="alert alert-info">{% blocktrans %}Below you can read the news with the &quot;{{ tag }}&quot; tag.{% endblocktrans %}</div>
+	{% endif %}
+
 	{% if news.paginator.count %}
 		{% for news_obj in news.object_list %}
 			<div class="row-fluid">
@@ -23,7 +27,16 @@
 						</p>
 						<div class="row-fluid">
 							{% get_comment_count for news_obj as comment_count %}
-							<div class="span10"><em class="muted">{% blocktrans %}{{ comment_count }} comments{% endblocktrans %}</em></div>
+							<div class="span10">
+								<em class="muted">{% blocktrans %}{{ comment_count }} comments{% endblocktrans %}</em>
+								{% if tag %}
+									&nbsp;
+									{% for curtag in news_obj.tags.all %}
+										<a href="{% url news_tags tag=curtag.name %}"><span class="label label-info tag-weight-1">{{ curtag.name }}</span></a>
+									{% endfor %}
+									</ul>
+								{% endif %}
+							</div>
 							<div class="span2"><a class="btn btn-primary" href="{% url news-details news_obj.slug %}">{% trans "Read More" %}</a></div>
 						</div>
 					</div>

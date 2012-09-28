@@ -3,6 +3,7 @@ from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import User
 from django.contrib.sites.models import Site
+from taggit.managers import TaggableManager
 
 from apps.news.managers import PublishedNewsManager
 
@@ -28,6 +29,7 @@ class News(models.Model):
 	updated_at = models.DateTimeField(auto_now=True)
 
 	pubs_objects = PublishedNewsManager()
+	tags = TaggableManager()
 
 	def __unicode__(self):
 		return u"%s" % self.title
