@@ -16,6 +16,7 @@ urlpatterns = patterns('',
     url(r'^accounts/profile/$', ProfileView.as_view(), name="auth_profile"),
     url(r'^accounts/', include('registration.backends.default.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^comments/', include('django_comments_xtd.urls')),
     url(r'^', include('cms.urls')),
 )
 

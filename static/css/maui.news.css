@@ -1,0 +1,4 @@
+.news-row:not(:last-child) {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 0.8em;
+}

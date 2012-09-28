@@ -1,0 +1,63 @@
+{% extends "news_base.html" %}
+{% load humanize i18n comments %}
+
+{% block extra_css %}
+		<link rel="stylesheet" href="{{ STATIC_URL }}css/maui.news.css" type="text/css">
+{% endblock %}
+
+{% block page_title %}{% trans "News" %}{% endblock %}
+
+{% block title %}<h1>{% trans "News" %} <small>{% trans "News & Updates" %}</small></h1>{% endblock %}
+
+{% block main %}
+	{% if news.paginator.count %}
+		{% for news_obj in news.object_list %}
+			<div class="row-fluid">
+				<div class="span1"><span class="label">{{ news_obj.category.name }}</span></div>
+				<div class="span11">
+					<div class="news-row">
+						<h4><a href="{% url news-details news_obj.slug %}">{{ news_obj.title }}</a></h4>
+						<span class="news-date">{{ news_obj.created_at|naturaltime }}, {{ news_obj.user.get_full_name }}</span>
+						<p>
+							{{ news_obj.body|striptags|linebreaksbr|urlizetrunc:20|safe|truncatewords:words }}
+						</p>
+						<div class="row-fluid">
+							{% get_comment_count for news_obj as comment_count %}
+							<div class="span10"><em class="muted">{% blocktrans %}{{ comment_count }} comments{% endblocktrans %}</em></div>
+							<div class="span2"><a class="btn btn-primary" href="{% url news-details news_obj.slug %}">{% trans "Read More" %}</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+		<div class="pagination">
+		    <span class="step-links">
+		        {% if news.has_previous %}
+		        	<span class="paginator-left">
+		            	<a href="{% url list-news news.previous_page_number %}">&lt;&lt; {% trans "newer" %}</a>
+		            </span>
+		        {% endif %}
+				
+				{% if news.has_other_pages %}
+		        	{% for number in news.paginator.page_range %}
+		        		{% ifequal number news.number %}
+		        		<span class="current-page">{{ number }}</span>
+		        		{% else %}
+		        		<span class="no-current-page">
+		        			<a href="{% url list-news number %}">{{ number }}</a>
+				        </span>
+		        		{% endifequal %}
+		        	{% endfor %}
+				{% endif %}
+		
+		        {% if news.has_next %}
+		        	<span class="paginator-right">
+		            	<a href="{% url list-news news.next_page_number %}">{% trans "older" %} &gt;&gt;</a>
+		            </span>
+		        {% endif %}
+		    </span>
+		</div>
+	{% else %}
+		<p class="info">{% trans "No news published so far." %}</p>
+	{% endif %}
+{% endblock %}
