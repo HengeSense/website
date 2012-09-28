@@ -1,6 +1,7 @@
 Django==1.4.1
-django-cms
+pil
 south
+django-cms
 django-tinymce
 django-reversion
 django-gravatar
