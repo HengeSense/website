@@ -13,6 +13,8 @@ class UserProfile(models.Model):
 	date_of_birth = models.DateField(_("Date of Birth"))
 	gender = models.CharField(_("Gender"), max_length=1, null=False, choices=GENDER_CHOICES)
 
+	receive_updates = models.BooleanField(_("Receive updates from this Web site"), default=True)
+
 	class Meta:
 		verbose_name = _("user profile")
 		verbose_name_plural = _("user profiles")

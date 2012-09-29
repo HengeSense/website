@@ -13,7 +13,7 @@ class UserProfileAdmin(admin.ModelAdmin):
 			"fields": ("user",)
 		}),
 		(_("Profile"), {
-			"fields": ("date_of_birth", "gender")
+			"fields": ("date_of_birth", "gender", "receive_updates")
 		})
 	)
 admin.site.register(UserProfile, UserProfileAdmin)
