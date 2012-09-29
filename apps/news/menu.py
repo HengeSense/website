@@ -12,8 +12,9 @@ class NewsMenu(CMSAttachMenu):
 		nodes = []
 		for item in News.pubs_objects.all():
 			node = NavigationNode(
-				item.title, reverse("apps.news.views.news_details",
-					kwargs={"slug": item.slug}),
+				item.title,
+#				reverse("news_details", kwargs={"slug": item.slug}),
+				"/news/%s" % item.slug,
 				item.pk
 			)
 			nodes.append(node)
