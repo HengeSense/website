@@ -5,7 +5,7 @@ from cms.sitemaps import CMSSitemap
 from django.contrib import admin
 admin.autodiscover()
 
-from website.views import HomeView, PreviewView, ProfileView
+from website.views import HomeView, PreviewView, ProfileView, EditProfileView
 
 urlpatterns = patterns('',
     url(r'^$', HomeView.as_view(), name="home_page"),
@@ -15,6 +15,7 @@ urlpatterns = patterns('',
             'cmspages': CMSSitemap
         }
     }),
+    url(r'^accounts/profile/edit/$', EditProfileView.as_view(), name="auth_edit_profile"),
     url(r'^accounts/profile/$', ProfileView.as_view(), name="auth_profile"),
     url(r'^accounts/', include('registration.backends.default.urls')),
     url(r'^admin/', include(admin.site.urls)),

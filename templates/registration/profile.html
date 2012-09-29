@@ -16,10 +16,14 @@
 {% endblock %}
 
 {% block content %}
+	{% if edit_mode %}
+	<form action="." method="post">
+		{% csrf_token %}
+	{% endif %}
+
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span10">
-				<form action="." method="post">
 				<table class="table table-bordered table-striped table-condensed">
 					<tbody>
 						<tr>
@@ -32,19 +36,67 @@
 						</tr>
 						<tr>
 							<th>{% trans "First Name" %}</th>
-							<td>{{ request.user.first_name }}</td>
+							<td>
+								{% if edit_mode %}
+									<div class="control-group{% if form.first_name.errors %} error{% endif %}">
+										<div class="controls">
+											{{ form.first_name }}
+											{% if form.first_name.errors %}<span class="help-inline">{{ form.first_name.errors }}</span>{% endif %}
+										</div>
+									</div>
+								{% else %}
+									{{ request.user.first_name }}
+								{% endif %}
+							</td>
 						</tr>
 						<tr>
 							<th>{% trans "Last Name" %}</th>
-							<td>{{ request.user.last_name }}</td>
+							<td>
+								{% if edit_mode %}
+									<div class="control-group{% if form.last_name.errors %} error{% endif %}">
+										<div class="controls">
+											{{ form.last_name }}
+											{% if form.last_name.errors %}<span class="help-inline">{{ form.last_name.errors }}</span>{% endif %}
+										</div>
+									</div>
+								{% else %}
+									{{ request.user.last_name }}
+								{% endif %}
+							</td>
 						</tr>
 						<tr>
 							<th>{% trans "Date of Birth" %}</th>
-							<td>{{ request.user.get_profile.date_of_birth|date:"SHORT_DATE_FORMAT" }}</td>
+							<td>
+								{% if edit_mode %}
+									<div class="control-group{% if form.date_of_birth.errors %} error{% endif %}">
+										<div class="controls">
+											{{ form.date_of_birth }}
+											{% if form.date_of_birth.errors %}<span class="help-inline">{{ form.date_of_birth.errors }}</span>{% endif %}
+										</div>
+									</div>
+								{% else %}
+									{{ request.user.get_profile.date_of_birth|date:"SHORT_DATE_FORMAT" }}
+								{% endif %}
+							</td>
 						</tr>
 						<tr>
 							<th>{% trans "Gender" %}</th>
-							<td>{{ request.user.get_profile.get_gender_display }}</td>
+							<td>
+								{% if edit_mode %}
+									<div class="control-group{% if form.gender.errors %} error{% endif %}">
+										<div class="controls">
+											<select name="gender">
+												<option value="">{% trans "Select a gender" %}</option>
+												<option value="M" {% ifequal form.gender.value "M" %}selected{% endifequal %}>{% trans "Male" %}</option>
+												<option value="F" {% ifequal form.gender.value "F" %}selected{% endifequal %}>{% trans "Female" %}</option>
+											</select>
+											{% if form.gender.errors %}<span class="help-inline">{{ form.gender.errors }}</span>{% endif %}
+										</div>
+									</div>
+								{% else %}
+									{{ request.user.get_profile.get_gender_display }}
+								{% endif %}
+							</td>
 						</tr>
 						<tr>
 							<th>{% trans "Joined Since" %}</th>
@@ -56,10 +108,16 @@
 						</tr>
 						<tr>
 							<td colspan="2">
-								{% if request.user.get_profile.receive_updates %}
-									<span class="badge badge-success"><i class="icon-ok"></i></span>&nbsp;{% trans "You are receiving updates from this Web site" %}
+								{% if edit_mode %}
+									<label class="checkbox">
+										{{ form.receive_updates }} {% trans "Receive updates from this Web site" %}
+									</label>
 								{% else %}
-									<span class="badge badge-important"><i class="icon-remove"></i></span>&nbsp;{% trans "You are not receiving updates from this Web site" %}
+									{% if request.user.get_profile.receive_updates %}
+										<span class="badge badge-success"><i class="icon-ok"></i></span>&nbsp;{% trans "You are receiving updates from this Web site" %}
+									{% else %}
+										<span class="badge badge-important"><i class="icon-remove"></i></span>&nbsp;{% trans "You are not receiving updates from this Web site" %}
+									{% endif %}
 								{% endif %}
 							</td>
 						</tr>
@@ -68,20 +126,28 @@
 			</div>
 			<div class="span2">
 				<img class="thumbnail pull-right" src="{% gravatar_for_user request.user 128 %}" alt="{% trans "Profile picture" %}"
-				     rel="tooltip" title="{% trans "Your picture" %}">
+					 rel="tooltip" title="{% trans "Your picture" %}">
+
+				<div class="btn-toolbar">
+					<div class="btn-group">
+						<a href="{% url auth_password_change %}" rel="tooltip" class="btn"
+						   title="{% trans "Change your password" %}">{% trans "Change Password" %}</a>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div class="row-fluid">
-			<div class="span2"></div>
-			<div class="span8">
-				<a id="editButton" rel="tooltip" class="btn btn-primary"
-				   title="{% trans "Edit your profile" %}">{% trans "Edit Profile" %}</a>
+		{% if edit_mode %}
+			<a href="{% url auth_profile %}" rel="tooltip" class="btn"
+			   title="{% trans "Get back to the profile page" %}">{% trans "&larr; Back" %}</a>
 
-				<a href="{% url auth_password_change %}" rel="tooltip" class="btn btn-danger"
-				   title="{% trans "Change your password" %}">{% trans "Change Password" %}</a>
-			</div>
-			<div class="span2"></div>
-		</div>
+			<button type="submit" id="saveButton" rel="tooltip" class="btn btn-success"
+			   title="{% trans "Save changes to your profile" %}">{% trans "Save Changes" %}</button>
+		{% else %}
+			<a href="{% url auth_edit_profile %}" rel="tooltip" class="btn btn-primary"
+			   title="{% trans "Edit your profile" %}">{% trans "Edit Profile" %}</a>
+		{% endif %}
 	</div>
+
+	{% if edit_mode %}</form>{% endif %}
 {% endblock %}
