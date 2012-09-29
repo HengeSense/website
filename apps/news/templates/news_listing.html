@@ -37,7 +37,7 @@
 									</p>
 								{% endif %}
 							</div>
-							<div class="span2"><a class="btn btn-primary" href="{% url news_details news_obj.slug %}">{% trans "Read More" %}</a></div>
+							<div class="span2"><a class="btn btn-primary" href="{% url news_details slug=news_obj.slug %}">{% trans "Read More" %}</a></div>
 						</div>
 					</div>
 				</div>
@@ -47,7 +47,7 @@
 		    <span class="step-links">
 		        {% if news.has_previous %}
 		        	<span class="paginator-left">
-		            	<a href="{% url list_news news.previous_page_number %}">&lt;&lt; {% trans "newer" %}</a>
+		            	<a href="{% url list_news page=news.previous_page_number %}">&lt;&lt; {% trans "newer" %}</a>
 		            </span>
 		        {% endif %}
 				
@@ -57,7 +57,7 @@
 		        		<span class="current-page">{{ number }}</span>
 		        		{% else %}
 		        		<span class="no-current-page">
-		        			<a href="{% url list_news number %}">{{ number }}</a>
+		        			<a href="{% url list_news page=number %}">{{ number }}</a>
 				        </span>
 		        		{% endifequal %}
 		        	{% endfor %}
@@ -65,7 +65,7 @@
 		
 		        {% if news.has_next %}
 		        	<span class="paginator-right">
-		            	<a href="{% url list_news news.next_page_number %}">{% trans "older" %} &gt;&gt;</a>
+		            	<a href="{% url list_news page=news.next_page_number %}">{% trans "older" %} &gt;&gt;</a>
 		            </span>
 		        {% endif %}
 		    </span>
