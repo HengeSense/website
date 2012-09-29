@@ -17,7 +17,7 @@ class NewsAdmin(admin.ModelAdmin):
 	fieldsets = [
 		("General", {"fields": ["user", "site", "title", "slug"],}),
 		("", {"fields": ["category", "body", "tags"]}),
-		("Published", {"fields": ["published", "comments_enabled"]}),
+		("Publishing", {"fields": ["published", "comments_enabled", "created_at", "updated_at"]}),
 	]
 	form = NewsAdminModelForm
 admin.site.register(News, NewsAdmin)
