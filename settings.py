@@ -169,7 +169,6 @@ INSTALLED_APPS = (
     'cms.plugins.inherit',
     # From this site:
     'apps.news',
-    'apps.cms.plugins.news',
     'apps.cms.plugins.faq',
     'website',
 )
