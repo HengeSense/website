@@ -1,378 +1,123 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
-<head>
-<title>File:Facebook Logo Mini.svg - Wikimedia Commons</title>
-<meta charset="UTF-8" />
-<meta name="generator" content="MediaWiki 1.20wmf12" />
-<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=File:Facebook_Logo_Mini.svg&amp;action=edit" />
-<link rel="edit" title="Edit" href="/w/index.php?title=File:Facebook_Logo_Mini.svg&amp;action=edit" />
-<link rel="apple-touch-icon" href="//commons.wikipedia.org/apple-touch-icon.png" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikimedia Commons" />
-<link rel="EditURI" type="application/rsd+xml" href="//commons.wikimedia.org/w/api.php?action=rsd" />
-<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
-<link rel="alternate" type="application/atom+xml" title="Wikimedia Commons Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="//bits.wikimedia.org/commons.wikimedia.org/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.AjaxQuickDelete%2CExtraTabs2%2CImprovedUploadForm%2CLanguageSelect%2CLong-Image-Names-in-Categories%2CSlideshow%2CStockphoto%2CUploadWizard%2CWikiMiniAtlas%2CZoomViewer%7Cext.wikihiero%7Cfilepage%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.vector&amp;only=styles&amp;skin=vector&amp;*" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<link rel="stylesheet" href="//bits.wikimedia.org/commons.wikimedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
-<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-/* cache key: commonswiki:resourceloader:filter:minify-css:7:0b7449c99e297120728e239932a49b4c */
-</style>
-
-<script src="//bits.wikimedia.org/commons.wikimedia.org/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
-<script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"File","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":6,"wgPageName":"File:Facebook_Logo_Mini.svg","wgTitle":"Facebook Logo Mini.svg","wgCurRevisionId":71354195,"wgArticleId":18781513,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CC-BY-SA-3.0","Self-published work","Uploaded with UploadWizard","Facebook f logo"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"File:Facebook_Logo_Mini.svg","wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRestrictionUpload":[],"wgSearchNamespaces":[0,6,12,14,100,106],"wgVectorEnabledModules":{"collapsiblenav":true,"collapsibletabs":true,"editwarning":true,"expandablesearch":false,"footercleanup":false,"sectioneditlinks":false,"simplesearch":true,"experiments":true},"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"templateEditor":false,"templates":false,"preview":false,"previewDialog":false,"publish":false,"toc":false},"wgNarayamAvailableSchemes":[],"wgNarayamAllSchemes":{"ady":[],"ady-cyrl":[],"ahr":{"ahr":"ext.narayam.rules.ahr","ahr-inscript":"ext.narayam.rules.ahr-inscript"},"am":[],"as":{"as":"ext.narayam.rules.as","as-avro":"ext.narayam.rules.as-avro","as-bornona":"ext.narayam.rules.as-bornona","as-inscript":"ext.narayam.rules.as-inscript"},"bh":{"bho":"ext.narayam.rules.bho","bho-inscript":"ext.narayam.rules.bho-inscript"},"av":[],"bho":{"bho":"ext.narayam.rules.bho","bho-inscript":"ext.narayam.rules.bho-inscript"},"bn":{"bn-avro":"ext.narayam.rules.bn-avro","bn-inscript":"ext.narayam.rules.bn-inscript","bn-nkb":"ext.narayam.rules.bn-nkb"},"brx":[],"hne":[],"ce":[],"de":{"de":"ext.narayam.rules.de"},"eo":{"eo":"ext.narayam.rules.eo"},"gom-deva":[],"gu":{"gu":"ext.narayam.rules.gu","gu-inscript":"ext.narayam.rules.gu-inscript"},"he":[],"hi":{"hi":"ext.narayam.rules.hi","hi-bolnagri":"ext.narayam.rules.hi-bolnagri","hi-inscript":"ext.narayam.rules.hi-inscript"},"inh":[],"kbd":[],"kbd-cyrl":[],"ka":{"ka":"ext.narayam.rules.ka"},"kn":{"kn":"ext.narayam.rules.kn","kn-inscript":"ext.narayam.rules.kn-inscript"},"lbe":[],"lez":[],"mai":[],"ml":{"ml":"ext.narayam.rules.ml","ml-inscript":"ext.narayam.rules.ml-inscript"},"mr":{"mr":"ext.narayam.rules.mr","mr-inscript":"ext.narayam.rules.mr-inscript"},"ne":[],"new":[],"or":{"or":"ext.narayam.rules.or","or-inscript":"ext.narayam.rules.or-inscript"},"pa":{"pa":"ext.narayam.rules.pa","pa-inscript":"ext.narayam.rules.pa-inscript","pa-phonetic":"ext.narayam.rules.pa-phonetic"},"rif":[],"sa":{"sa":"ext.narayam.rules.sa","sa-inscript":"ext.narayam.rules.sa-inscript"},"shi":[],"si":{"si-singlish":"ext.narayam.rules.si-singlish","si-wijesekara":"ext.narayam.rules.si-wijesekara"},"ta":{"ta":"ext.narayam.rules.ta","ta-99":"ext.narayam.rules.ta-99","ta-inscript":"ext.narayam.rules.ta-inscript"},"tcy":[],"te":{"te":"ext.narayam.rules.te","te-inscript":"ext.narayam.rules.te-inscript"},"tkr":[],"ur":[],"ru":[],"sah":[]},"wikilove-recipient":"","wikilove-anon":0,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","Geo":{"city":"","country":""},"wgNoticeProject":"commons"});
-}</script><script>if(window.mw){
-mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":true,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
-"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"vector-simplesearch":1,"useeditwarning":1,"vector-collapsiblenav":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"upwiz_deflicense":"default","upwiz_def3rdparty":"default","upwiz_deflicensetype":"default","wikilove-enabled":1,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":true,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":true,"searchNs13":false,"searchNs14":true,"searchNs15":false,"searchNs100":true,"searchNs101":false,"searchNs102":false,"searchNs103":false,"searchNs104":false,"searchNs105":false,"searchNs106":true,"searchNs107":false,"gadget-Slideshow":1,"gadget-ZoomViewer":1,"gadget-UploadWizard":1,"gadget-ImprovedUploadForm":1,"gadget-MyUploads":1,
-"gadget-RotateLink":1,"gadget-RenameLink":1,"gadget-Long-Image-Names-in-Categories":1,"gadget-Stockphoto":1,"gadget-ExtraTabs2":1,"gadget-WikiMiniAtlas":1,"gadget-AjaxQuickDelete":1,"gadget-LanguageSelect":1,"narayamEnable":true});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
-
-/* cache key: commonswiki:resourceloader:filter:minify-js:7:e0779e9a4a8968e67d665df4f0150439 */
-}</script>
-<script>if(window.mw){
-mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.centralNotice.bannerController"]);
-}</script>
-<script src="//bits.wikimedia.org/geoiplookup"></script><!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.20wmf12/vector/csshover.min.htc")}</style><![endif]--></head>
-<body class="mediawiki ltr sitedir-ltr ns-6 ns-subject page-File_Facebook_Logo_Mini_svg skin-vector action-view vector-animateLayout">
-		<div id="mw-page-base" class="noprint"></div>
-		<div id="mw-head-base" class="noprint"></div>
-		<!-- content -->
-		<div id="content" class="mw-body">
-			<a id="top"></a>
-			<div id="mw-js-message" style="display:none;"></div>
-						<!-- sitenotice -->
-			<div id="siteNotice"><!-- CentralNotice --><script>mw.centralNotice.initialize();</script><script type="text/javascript">
-/* <![CDATA[ */
-document.writeln("\x3cdiv id=\"localNotice\" lang=\"en\" dir=\"ltr\"\x3e\x3cp style=\"display:none\"\x3e\x3c/p\x3e\n\x3c/div\x3e");
-/* ]]> */
-</script></div>
-			<!-- /sitenotice -->
-						<!-- firstHeading -->
-			<h1 id="firstHeading" class="firstHeading"><span dir="auto">File:Facebook Logo Mini.svg</span></h1>
-			<!-- /firstHeading -->
-			<!-- bodyContent -->
-			<div id="bodyContent">
-								<!-- tagline -->
-				<div id="siteSub">From Wikimedia Commons, the free media repository</div>
-				<!-- /tagline -->
-								<!-- subtitle -->
-				<div id="contentSub"></div>
-				<!-- /subtitle -->
-																<!-- jumpto -->
-				<div id="jump-to-nav" class="mw-jump">
-					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
-				</div>
-				<!-- /jumpto -->
-								<!-- bodycontent -->
-				<div id="mw-content-text"><ul id="filetoc"><li><a href="#file">File</a></li>
-<li><a href="#filehistory">File history</a></li>
-<li><a href="#filelinks">File usage on Commons</a></li>
-<li><a href="#globalusage">File usage on other wikis</a></li>
-<li><a href="#metadata">Metadata</a></li></ul><div class="fullImageLink" id="file"><a href="//upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_Logo_Mini.svg"><img alt="File:Facebook Logo Mini.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_Logo_Mini.svg/500px-Facebook_Logo_Mini.svg.png" width="500" height="500" /></a><div class="mw-filepage-resolutioninfo"></div></div>
-<div class="fullMedia"><a href="//upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_Logo_Mini.svg" class="internal" title="Facebook Logo Mini.svg">Facebook_Logo_Mini.svg</a> &#8206;<span class="fileInfo">(SVG file, nominally 500 × 500 pixels, file size: 4 KB)</span>
-</div>
-<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr"><h2><span class="editsection">[<a href="/w/index.php?title=File:Facebook_Logo_Mini.svg&amp;action=edit&amp;section=1" title="Edit section: Summary">edit</a>]</span> <span class="mw-headline" id="Summary">Summary</span></h2>
-<div class="hproduct">
-<table class="toccolours vevent" style="width: 100%; direction: ltr;" cellpadding="4">
-<tr style="vertical-align: top">
-<td id="fileinfotpl_desc" style="background: #ccf; text-align: right; padding-right: 0.4em; width: 15%; font-weight:bold">Description</td>
-<td>
-<div class="description en" lang="en" style="direction:ltr;" xml:lang="en"><span class="description"><span class="language en" title=""><b>English:</b></span> Mini Facebook logo (f). Own made.</span></div>
-</td>
-</tr>
-<tr style="vertical-align: top">
-<td id="fileinfotpl_date" style="background: #ccf; text-align: right; padding-right: 0.4em; width: 15%; font-weight:bold">Date</td>
-<td>21 March 2012<span style="display:none">(<span class="dtstart">2012-03-21</span>)</span></td>
-</tr>
-<tr style="vertical-align: top">
-<td id="fileinfotpl_src" style="background: #ccf; text-align: right; padding-right: 0.4em; width: 15%; font-weight:bold">Source</td>
-<td><span class="int-own-work">Own work</span></td>
-</tr>
-<tr style="vertical-align: top">
-<td id="fileinfotpl_aut" style="background: #ccf; text-align: right; padding-right: 0.4em; width: 15%; font-weight:bold">Author</td>
-<td><a href="/wiki/User:Jer101jer" title="User:Jer101jer">Jer101jer</a></td>
-</tr>
-</table>
-</div>
-<p>Own made Facebook logo</p>
-<h2><span class="editsection">[<a href="/w/index.php?title=File:Facebook_Logo_Mini.svg&amp;action=edit&amp;section=2" title="Edit section: Licensing">edit</a>]</span> <span class="mw-headline" id="Licensing">Licensing</span></h2>
-<table cellspacing="8" cellpadding="0" style="clear:both; margin:0.5em auto; background-color:#f0f0f0; border:2px solid #e0e0e0; direction: ltr;" class="licensetpl_wrapper">
-<tr>
-<td>
-<center><b><span lang="en" class="description en" xml:lang="en">I, the copyright holder of this work, hereby publish it under the following license:</span></b></center>
-<table cellspacing="8" cellpadding="0" style="width:100%; clear:both; text-align:center; margin:0.5em auto; background-color:#f9f9f9; border:2px solid #e0e0e0; direction: ltr;" class="layouttemplate licensetpl">
-<tr>
-<td style="width:90px;" rowspan="3"><img alt="w:en:Creative Commons" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/90px-CC_some_rights_reserved.svg.png" width="90" height="36" /><br />
-<img alt="attribution" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/24px-Cc-by_new_white.svg.png" width="24" height="24" /> <img alt="share alike" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/29/Cc-sa.svg/24px-Cc-sa.svg.png" width="24" height="24" /></td>
-<td>This file is licensed under the <a href="//en.wikipedia.org/wiki/en:Creative_Commons" class="extiw" title="w:en:Creative Commons">Creative Commons</a> <a rel="nofollow" class="external text" href="//creativecommons.org/licenses/by-sa/3.0/deed.en">Attribution-Share Alike 3.0 Unported</a> license.</td>
-<td style="width:90px;" rowspan="3"></td>
-</tr>
-<tr style="text-align:center;">
-<td></td>
-</tr>
-<tr style="text-align:left;">
-<td>
-<dl>
-<dd>You are free:
-<ul>
-<li><b>to share</b> – to copy, distribute and transmit the work</li>
-<li><b>to remix</b> – to adapt the work</li>
-</ul>
-</dd>
-<dd>Under the following conditions:
-<ul>
-<li><b>attribution</b> – You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work).</li>
-<li><b>share alike</b> – If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one.</li>
-</ul>
-</dd>
-</dl>
-<p><span class="licensetpl_link" style="display:none;">http://creativecommons.org/licenses/by-sa/3.0</span> <span class="licensetpl_short" style="display:none;">CC-BY-SA-3.0</span> <span class="licensetpl_long" style="display:none;">Creative Commons Attribution-Share Alike 3.0</span> <span class="licensetpl_link_req" style="display:none;">true</span><span class="licensetpl_attr_req" style="display:none;">true</span></p>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-
-
-<!-- 
-NewPP limit report
-Preprocessor node count: 905/1000000
-Post-expand include size: 11739/2048000 bytes
-Template argument size: 1529/2048000 bytes
-Highest expansion depth: 14/40
-Expensive parser function count: 0/500
--->
-
-<!-- Saved in parser cache with key commonswiki:pcache:idhash:18781513-0!*!0!default!!en!4!* and timestamp 20120819034710 -->
-</div><h2 id="filehistory">File history</h2>
-<div id="mw-imagepage-section-filehistory">
-<p>Click on a date/time to view the file as it appeared at that time.
-</p>
-<table class="wikitable filehistory">
-<tr><td></td><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
-<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="//upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_Logo_Mini.svg">20:45, 21 March 2012</a></td><td><a href="//upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_Logo_Mini.svg"><img alt="Thumbnail for version as of 20:45, 21 March 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_Logo_Mini.svg/120px-Facebook_Logo_Mini.svg.png" width="120" height="120" /></a></td><td>500 × 500 <span style="white-space: nowrap;">(4 KB)</span></td><td><a href="/wiki/User:Jer101jer" title="User:Jer101jer" class="mw-userlink">Jer101jer</a> <span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Jer101jer" title="User talk:Jer101jer">talk</a> | <a href="/wiki/Special:Contributions/Jer101jer" title="Special:Contributions/Jer101jer">contribs</a>)</span></span></td><td dir="ltr">Light on object is higher</td></tr>
-<tr><td></td><td  style='white-space: nowrap;'><a href="//upload.wikimedia.org/wikipedia/commons/archive/c/cd/20120321204559%21Facebook_Logo_Mini.svg">20:34, 21 March 2012</a></td><td><a href="//upload.wikimedia.org/wikipedia/commons/archive/c/cd/20120321204559%21Facebook_Logo_Mini.svg"><img alt="Thumbnail for version as of 20:34, 21 March 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/archive/c/cd/20120321204559%21Facebook_Logo_Mini.svg/120px-Facebook_Logo_Mini.svg.png" width="120" height="120" /></a></td><td>500 × 500 <span style="white-space: nowrap;">(4 KB)</span></td><td><a href="/wiki/User:Jer101jer" title="User:Jer101jer" class="mw-userlink">Jer101jer</a> <span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Jer101jer" title="User talk:Jer101jer">talk</a> | <a href="/wiki/Special:Contributions/Jer101jer" title="Special:Contributions/Jer101jer">contribs</a>)</span></span></td><td dir="ltr">With text</td></tr>
-<tr><td></td><td  style='white-space: nowrap;'><a href="//upload.wikimedia.org/wikipedia/commons/archive/c/cd/20120321203411%21Facebook_Logo_Mini.svg">20:17, 21 March 2012</a></td><td><a href="//upload.wikimedia.org/wikipedia/commons/archive/c/cd/20120321203411%21Facebook_Logo_Mini.svg"><img alt="Thumbnail for version as of 20:17, 21 March 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/archive/c/cd/20120321203411%21Facebook_Logo_Mini.svg/120px-Facebook_Logo_Mini.svg.png" width="120" height="120" /></a></td><td>500 × 500 <span style="white-space: nowrap;">(4 KB)</span></td><td><a href="/wiki/User:Jer101jer" title="User:Jer101jer" class="mw-userlink">Jer101jer</a> <span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Jer101jer" title="User talk:Jer101jer">talk</a> | <a href="/wiki/Special:Contributions/Jer101jer" title="Special:Contributions/Jer101jer">contribs</a>)</span></span></td><td dir="ltr"></td></tr>
-</table>
-
-</div>
-<ul>
-<li id="mw-imagepage-upload-disallowed">Unfortunately you cannot overwrite this image.</li>
-<li id="mw-imagepage-edit-external"><a href="/w/index.php?title=File:Facebook_Logo_Mini.svg&amp;action=edit&amp;externaledit=true&amp;mode=file" title="File:Facebook Logo Mini.svg">Edit this file using an external application</a> <small>(See the <a href="//www.mediawiki.org/wiki/Manual:External_editors" class="extiw" title="mw:Manual:External editors">setup instructions</a> for more information)</small></li>
-</ul>
-<h2 id="filelinks">File usage on Commons</h2>
-<div id="mw-imagepage-nolinkstoimage">
-<p>There are no pages that link to this file.
-</p>
-</div>
-<h2 id="globalusage">File usage on other wikis</h2>
-<div id="mw-imagepage-section-globalusage"><p>The following other wikis use this file:
-</p><ul>
-<li class='mw-gu-onwiki-de_wikipedia_org'>Usage on de.wikipedia.org
-<ul>	<li><a class="external" href="//de.wikipedia.org/wiki/Benutzer:Serafim_89">Benutzer:Serafim 89</a></li>
-	<li><a class="external" href="//de.wikipedia.org/wiki/Benutzer:Serafim_89/Vorlage:Babel">Benutzer:Serafim 89/Vorlage:Babel</a></li>
-	<li><a class="external" href="//de.wikipedia.org/wiki/Benutzer:Serafim_89/Vorlage:Als_es_Facebook_noch_nicht_gab">Benutzer:Serafim 89/Vorlage:Als es Facebook noch nicht gab</a></li>
-</ul></li>
-<li class='mw-gu-onwiki-nl_wikipedia_org'>Usage on nl.wikipedia.org
-<ul>	<li><a class="external" href="//nl.wikipedia.org/wiki/Gebruiker:Jer101jer/Profiel">Gebruiker:Jer101jer/Profiel</a></li>
-</ul></li>
-</ul>
-</div><h2 id="metadata">Metadata</h2>
-<div class="mw-imagepage-section-metadata">This file contains additional information, such as <a href="/wiki/Commons:EXIF" title="Commons:EXIF">EXIF</a> metadata, probably added from the digital camera or scanner used to create or digitize it.
-If the file has been modified from its original state, some details may not fully reflect the modified file.<table id="mw_metadata" class="mw_metadata">
-</table>
-</div>
-</div>				<!-- /bodycontent -->
-								<!-- printfooter -->
-				<div class="printfooter">
-				Retrieved from "<a href="http://commons.wikimedia.org/w/index.php?title=File:Facebook_Logo_Mini.svg&amp;oldid=71354195">http://commons.wikimedia.org/w/index.php?title=File:Facebook_Logo_Mini.svg&amp;oldid=71354195</a>"				</div>
-				<!-- /printfooter -->
-												<!-- catlinks -->
-				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Facebook_f_logo" title="Category:Facebook f logo">Facebook f logo</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-user-shown">Hidden categories: <ul><li><a href="/wiki/Category:CC-BY-SA-3.0" title="Category:CC-BY-SA-3.0">CC-BY-SA-3.0</a></li><li><a href="/wiki/Category:Self-published_work" title="Category:Self-published work">Self-published work</a></li><li><a href="/wiki/Category:Uploaded_with_UploadWizard" title="Category:Uploaded with UploadWizard">Uploaded with UploadWizard</a></li></ul></div></div>				<!-- /catlinks -->
-												<div class="visualClear"></div>
-				<!-- debughtml -->
-								<!-- /debughtml -->
-			</div>
-			<!-- /bodyContent -->
-		</div>
-		<!-- /content -->
-		<!-- header -->
-		<div id="mw-head" class="noprint">
-			
-<!-- 0 -->
-<div id="p-personal" class="">
-	<h5>Personal tools</h5>
-	<ul>
-		<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=File%3AFacebook+Logo+Mini.svg&amp;type=signup">Create account</a></li>
-		<li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=File%3AFacebook+Logo+Mini.svg" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
-	</ul>
-</div>
-
-<!-- /0 -->
-			<div id="left-navigation">
-				
-<!-- 0 -->
-<div id="p-namespaces" class="vectorTabs">
-	<h5>Namespaces</h5>
-	<ul>
-					<li  id="ca-nstab-image" class="selected"><span><a href="/wiki/File:Facebook_Logo_Mini.svg"  title="View the file page [c]" accesskey="c">File</a></span></li>
-					<li  id="ca-talk" class="new"><span><a href="/w/index.php?title=File_talk:Facebook_Logo_Mini.svg&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-variants" class="vectorMenu emptyPortlet">
-	<h4>
-		</h4>
-	<h5><span>Variants</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-			</div>
-			<div id="right-navigation">
-				
-<!-- 0 -->
-<div id="p-views" class="vectorTabs">
-	<h5>Views</h5>
-	<ul>
-					<li id="ca-view" class="selected"><span><a href="/wiki/File:Facebook_Logo_Mini.svg" >View</a></span></li>
-					<li id="ca-edit"><span><a href="/w/index.php?title=File:Facebook_Logo_Mini.svg&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=File:Facebook_Logo_Mini.svg&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-cactions" class="vectorMenu emptyPortlet">
-	<h5><span>Actions</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-
-<!-- 2 -->
-<div id="p-search">
-	<h5><label for="searchInput">Search</label></h5>
-	<form action="/w/index.php" id="searchform">
-				<div id="simpleSearch">
-						<input name="search" title="Search Wikimedia Commons [f]" accesskey="f" id="searchInput" />						<button name="button" title="Search the pages for this text" id="searchButton" width="12" height="13"><img src="//bits.wikimedia.org/static-1.20wmf12/skins/vector/images/search-ltr.png?303-4" alt="Search" /></button>								<input type='hidden' name="title" value="Special:Search"/>
-		</div>
-	</form>
-</div>
-
-<!-- /2 -->
-			</div>
-		</div>
-		<!-- /header -->
-		<!-- panel -->
-			<div id="mw-panel" class="noprint">
-				<!-- logo -->
-					<div id="p-logo"><a style="background-image: url(//upload.wikimedia.org/wikipedia/commons/7/79/Wiki-commons.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
-				<!-- /logo -->
-				
-<!-- SEARCH -->
-
-<!-- /SEARCH -->
-
-<!-- navigation -->
-<div class="portal" id='p-navigation'>
-	<h5>Navigation</h5>
-	<div class="body">
-		<ul>
-			<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li>
-			<li id="n-welcome"><a href="/wiki/Commons:Welcome">Welcome</a></li>
-			<li id="n-portal"><a href="/wiki/Commons:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
-			<li id="n-village-pump"><a href="/wiki/Commons:Village_pump">Village pump</a></li>
-		</ul>
-	</div>
-</div>
-
-<!-- /navigation -->
-
-<!-- participate -->
-<div class="portal" id='p-participate'>
-	<h5>Participate</h5>
-	<div class="body">
-		<ul>
-			<li id="n-uploadbtn"><a href="/wiki/Commons:Upload">Upload file</a></li>
-			<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-			<li id="n-latestfiles"><a href="/wiki/Special:NewFiles">Latest files</a></li>
-			<li id="n-randomimage"><a href="/wiki/Special:Random/File" title="Load a random file [x]" accesskey="x">Random file</a></li>
-			<li id="n-help"><a href="/wiki/Help:Contents" title="The place to find out">Help</a></li>
-			<li id="n-contact"><a href="/wiki/Commons:Contact_us">Contact us</a></li>
-			<li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20120717SB001&amp;uselang=en" title="Support us">Donate</a></li>
-		</ul>
-	</div>
-</div>
-
-<!-- /participate -->
-
-<!-- TOOLBOX -->
-<div class="portal" id='p-tb'>
-	<h5>Toolbox</h5>
-	<div class="body">
-		<ul>
-			<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/File:Facebook_Logo_Mini.svg" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
-			<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/File:Facebook_Logo_Mini.svg" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
-			<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
-			<li id="t-print"><a href="/w/index.php?title=File:Facebook_Logo_Mini.svg&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
-			<li id="t-permalink"><a href="/w/index.php?title=File:Facebook_Logo_Mini.svg&amp;oldid=71354195" title="Permanent link to this revision of the page">Permanent link</a></li>
-		</ul>
-	</div>
-</div>
-
-<!-- /TOOLBOX -->
-
-<!-- LANGUAGES -->
-
-<!-- /LANGUAGES -->
-			</div>
-		<!-- /panel -->
-		<!-- footer -->
-		<div id="footer">
-							<ul id="footer-info">
-											<li id="footer-info-lastmod"> This page was last modified on 19 May 2012, at 20:10.</li>
-											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution/Share-Alike License</a>;
-additional terms may apply.
-See <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.</li>
-									</ul>
-							<ul id="footer-places">
-											<li id="footer-places-privacy"><a href="/wiki/Commons:Privacy_policy" title="Commons:Privacy policy">Privacy policy</a></li>
-											<li id="footer-places-about"><a href="/wiki/Commons:Welcome" title="Commons:Welcome">About Wikimedia Commons</a></li>
-											<li id="footer-places-disclaimer"><a href="/wiki/Commons:General_disclaimer" title="Commons:General disclaimer">Disclaimers</a></li>
-											<li id="footer-places-mobileview"><a href="https://commons.wikimedia.org/w/index.php?title=File:Facebook_Logo_Mini.svg&amp;mobileaction=toggle_view_mobile" class="noprint">Mobile view</a></li>
-									</ul>
-										<ul id="footer-icons" class="noprint">
-					<li id="footer-copyrightico">
-						<a href="//wikimediafoundation.org/"><img src="//bits.wikimedia.org/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a>
-					</li>
-					<li id="footer-poweredbyico">
-						<a href="//www.mediawiki.org/"><img src="//bits.wikimedia.org/static-1.20wmf12/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
-					</li>
-				</ul>
-						<div style="clear:both"></div>
-		</div>
-		<!-- /footer -->
-		<script>if(window.mw){
-mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
-}</script>
-<script src="//bits.wikimedia.org/commons.wikimedia.org/load.php?debug=false&amp;lang=en&amp;modules=skins.vector&amp;only=scripts&amp;skin=vector&amp;*"></script>
-<script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.metadata","mediawiki.user","mediawiki.page.ready","mediawiki.legacy.mwsuggest","ext.gadget.Slideshow","ext.gadget.ZoomViewer","ext.gadget.UploadWizard","ext.gadget.ImprovedUploadForm","ext.gadget.Long-Image-Names-in-Categories","ext.gadget.Stockphoto","ext.gadget.ExtraTabs2","ext.gadget.WikiMiniAtlas","ext.gadget.AjaxQuickDelete","ext.gadget.LanguageSelect","ext.vector.collapsibleNav","ext.vector.collapsibleTabs","ext.vector.editWarning","ext.vector.simpleSearch"], null, true);
-}</script>
-<script src="//bits.wikimedia.org/commons.wikimedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*"></script>
-<!-- Served by srv272 in 0.161 secs. -->
-	</body>
-</html>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="500"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="Facebook normaal.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3769">
+      <stop
+         style="stop-color:#526ea4;stop-opacity:1;"
+         offset="0"
+         id="stop3771" />
+      <stop
+         style="stop-color:#2c416e;stop-opacity:1;"
+         offset="1"
+         id="stop3773" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3769"
+       id="radialGradient3777"
+       cx="332.6116"
+       cy="768.62415"
+       fx="332.6116"
+       fy="768.62415"
+       r="249.69035"
+       gradientTransform="matrix(1.4762245,-0.01630119,0.01684499,1.5254519,-248.34766,-170.78924)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.2510229"
+     inkscape:cx="512.75789"
+     inkscape:cy="-64.687876"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="718"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-552.36218)">
+    <rect
+       style="fill:url(#radialGradient3777);fill-opacity:1.0;fill-rule:evenodd;stroke:none"
+       id="rect2998"
+       width="499.38071"
+       height="498.92853"
+       x="0.26217973"
+       y="553.07648"
+       rx="60"
+       ry="60" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:0.19607843;fill-rule:evenodd;stroke:none"
+       id="path3779"
+       sodipodi:cx="322"
+       sodipodi:cy="-98"
+       sodipodi:rx="638"
+       sodipodi:ry="334"
+       d="m 960,-98 a 638,334 0 1 1 -1276,0 638,334 0 1 1 1276,0 z"
+       transform="matrix(0.8369906,0,0,1,-31.510972,564.36218)" />
+    <text
+       xml:space="preserve"
+       style="font-size:300px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="226.40749"
+       y="1020.2952"
+       id="text2993"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="226.40749"
+         y="1020.2952"
+         id="tspan2995"><tspan
+           x="226.40749"
+           y="1020.2952"
+           style="font-size:600px;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial Bold;fill:#ffffff"
+           id="tspan2997">f</tspan></tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:0.29411765;fill-rule:evenodd;stroke:none"
+       id="rect3784"
+       width="446.67606"
+       height="104"
+       x="25.377132"
+       y="916.2821"
+       rx="15.438112"
+       ry="15" />
+  </g>
+</svg>
