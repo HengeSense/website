@@ -7,22 +7,6 @@
 {% block extra_js %}
 	<script type="text/javascript">
 		$(function() {
-			var infoChange = false;
-
-			$("#changeInfoButton").click(function() {
-				infoChange = !infoChange;
-
-				if (infoChange) {
-					$("#changeInfoButton").addClass("btn-success");
-					$("#changeInfoButton").html("{% trans "Save Changes" %}");
-					$("table span").addClass("input-medium");
-				} else {
-					$("#changeInfoButton").removeClass("btn-success");
-					$("#changeInfoButton").html("{% trans "Change your information" %}");
-					$("table span").removeClass("input-medium");
-				}
-				$("table span").attr("contentEditable", infoChange);
-			});
 		});
 	</script>
 {% endblock %}
@@ -35,6 +19,7 @@
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span10">
+				<form action="." method="post">
 				<table class="table table-bordered table-striped table-condensed">
 					<tbody>
 						<tr>
@@ -43,19 +28,19 @@
 						</tr>
 						<tr>
 							<th>{% trans "Email Address" %}</th>
-							<td><span contentEdiable="false">{{ request.user.email }}</span></td>
+							<td>{{ request.user.email }}</td>
 						</tr>
 						<tr>
 							<th>{% trans "First Name" %}</th>
-							<td><span contentEditable="false">{{ request.user.first_name }}</span></td>
+							<td>{{ request.user.first_name }}</td>
 						</tr>
 						<tr>
 							<th>{% trans "Last Name" %}</th>
-							<td><span contentEditable="false">{{ request.user.last_name }}</span></td>
+							<td>{{ request.user.last_name }}</td>
 						</tr>
 						<tr>
 							<th>{% trans "Date of Birth" %}</th>
-							<td><span contentEditable="false">{{ request.user.get_profile.date_of_birth|date:"SHORT_DATE_FORMAT" }}</span></td>
+							<td>{{ request.user.get_profile.date_of_birth|date:"SHORT_DATE_FORMAT" }}</td>
 						</tr>
 						<tr>
 							<th>{% trans "Gender" %}</th>
@@ -69,6 +54,15 @@
 							<th>{% trans "Last Login" %}</th>
 							<td>{{ request.user.last_login|date:"SHORT_DATETIME_FORMAT" }}</td>
 						</tr>
+						<tr>
+							<td colspan="2">
+								{% if request.user.get_profile.receive_updates %}
+									<span class="badge badge-success"><i class="icon-ok"></i></span>&nbsp;{% trans "You are receiving updates from this Web site" %}
+								{% else %}
+									<span class="badge badge-important"><i class="icon-remove"></i></span>&nbsp;{% trans "You are not receiving updates from this Web site" %}
+								{% endif %}
+							</td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
@@ -81,10 +75,11 @@
 		<div class="row-fluid">
 			<div class="span2"></div>
 			<div class="span8">
-				<a id="changeInfoButton" rel="tooltip" title="{% trans "Change your information such as first name, last name, date of birth and email address" %}"
-				   class="btn">{% trans "Change your information" %}</a>
-				<a href="{% url auth_password_change %}" rel="tooltip" title="{% trans "Change your password" %}"
-				   class="btn">{% trans "Change Password" %}</a>
+				<a id="editButton" rel="tooltip" class="btn btn-primary"
+				   title="{% trans "Edit your profile" %}">{% trans "Edit Profile" %}</a>
+
+				<a href="{% url auth_password_change %}" rel="tooltip" class="btn btn-danger"
+				   title="{% trans "Change your password" %}">{% trans "Change Password" %}</a>
 			</div>
 			<div class="span2"></div>
 		</div>
