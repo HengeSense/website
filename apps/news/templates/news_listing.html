@@ -20,7 +20,7 @@
 				<div class="span1"><span class="label">{{ news_obj.category.name }}</span></div>
 				<div class="span11">
 					<div class="news-row">
-						<h4><a href="{{ news_obj.get_absolute_url }}">{{ news_obj.title }}</a></h4>
+						<h4>{{ news_obj.title }}</h4>
 						<span class="muted">{{ news_obj.created_at|naturaltime }}, {{ news_obj.user.get_full_name }}</span>
 						<p>
 							{{ news_obj.body|striptags|linebreaksbr|urlizetrunc:20|safe|truncatewords:words }}
@@ -37,7 +37,7 @@
 									</p>
 								{% endif %}
 							</div>
-							<div class="span2"><a class="btn btn-primary" href="{% url news_details slug=news_obj.slug %}">{% trans "Read More" %}</a></div>
+							<div class="span2"><a class="btn btn-primary" href="{{ news_obj.get_absolute_url }}">{% trans "Read More" %}</a></div>
 						</div>
 					</div>
 				</div>
