@@ -1,15 +1,30 @@
 {% extends "base.html" %}
 
+{% block final_js %}
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+{% endblock %}
+
 {% block base_content %}
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span2"></div>
 
 			<div class="span8">
-				<div class="content">
-					<div class="page-header">{% block title %}{% endblock %}</div>
+				<div class="span10">
+					<div class="content">
+						<div class="page-header">{% block title %}{% endblock %}</div>
+						{% block main %}{% endblock %}
+					</div>
+				</div>
 
-					{% block main %}{% endblock %}
+				<div class="span2">
+					<div class="column-content">
+						<!-- Google+ box -->
+						<div class="g-plus" data-width="270" data-href="//plus.google.com/106410682256187719404" data-rel="publisher"></div>
+
+						<!-- Facebook Like Box -->
+						<div class="fb-like-box fb-like-box-reset" data-href="https://www.facebook.com/mauios" data-width="270" data-show-faces="true" data-stream="false" data-header="false"></div>
+					</div>
 				</div>
 			</div>
 
