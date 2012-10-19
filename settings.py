@@ -138,6 +138,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'django.contrib.humanize',
     'django.contrib.sitemaps',
+    'django.contrib.markup',
     # Gravatar support:
     'gravatar',
     # Registration:
@@ -167,6 +168,8 @@ INSTALLED_APPS = (
     'cms.plugins.video',
     'cms.plugins.twitter',
     'cms.plugins.inherit',
+    # Markdown CMS plugin:
+    'cmsplugin_markdown',
     # From this site:
     'apps.news',
     'apps.cms.plugins.faq',
