@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 {% load cms_tags sekizai_tags menu_tags i18n googleanalytics %}
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Product">
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="{% page_attribute "meta_keywords" %}">
 		<meta name="description" content="{% page_attribute "meta_description" %}">
 		<title>{% block page_title %}{% page_attribute "page_title" %}{% endblock %}</title>
+
+		<meta itemprop="name" content="Maui">
+		<meta itemprop="description" content="{% trans "Maui is a Linux-based desktop operating system using Qt, QtQuick and Wayland aiming at ease of use and out of the box experience." %}">
+		<meta itemprop="image" content="{{ STATIC_URL }}img/logos/m.png">
+
+		<meta property="og:title" content="Maui">
+		<meta property="og:image" content="{{ STATIC_URL }}img/logos/m.png">
+		<meta property="og:description" content="{% trans "Maui is a Linux-based desktop operating system using Qt, QtQuick and Wayland aiming at ease of use and out of the box experience." %}">
+
 		<link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
 
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
-
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Sans+Mono" type="text/css">
 		<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css" type="text/css">
 		<link rel="stylesheet" href="{{ STATIC_URL }}css/maui.layout.css" type="text/css">
 		<link rel="stylesheet" href="{{ STATIC_URL }}css/maui.styles.css" type="text/css">
@@ -46,8 +54,10 @@
 						<span class="icon-bar"></span>
 					</a>
 
-					<a class="brand" href="/">Maui</a>
-					<!-- <p class="tagline">{% trans "Out of the box experience" %}</p> -->
+					<a class="brand" href="/">
+						<img src="{{ STATIC_URL }}img/logos/m.png" width="25" height="25" style="margin-right: 1em">
+						Maui
+					</a>
 
 					<div class="nav-collapse">
 <!--
