@@ -72,6 +72,10 @@ footer a {
 	padding: 1.5em;
 }
 
+.column-content {
+	margin-top: 1em;
+}
+
 /* Override Bootstrap colors */
 
 .nav-pills > .active > a, .nav-pills > .active > a:hover {

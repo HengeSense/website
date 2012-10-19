@@ -8,18 +8,20 @@
 
 			<div class="span8">
 				<div class="span2">
-					<div class="well" style="margin-top: 1em">
-						<ul class="nav nav-list">
-							<li class="nav-header">{% trans "Topics" %}</li>
-							{% show_sub_menu %}
-						</ul>
-					</div>
+					<div class="column-content">
+						<div class="well">
+							<ul class="nav nav-list">
+								<li class="nav-header">{% trans "Topics" %}</li>
+								{% show_sub_menu %}
+							</ul>
+						</div>
 
-					<div class="well">
-						<ul class="nav nav-list">
-							<li class="nav-header">{% trans "Languages" %}</li>
-							{% language_chooser %}
-						</ul>
+						<div class="well">
+							<ul class="nav nav-list">
+								<li class="nav-header">{% trans "Languages" %}</li>
+								{% language_chooser %}
+							</ul>
+						</div>
 					</div>
 				</div>
 
