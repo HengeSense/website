@@ -1,10 +1,6 @@
 {% extends "news_base.html" %}
 {% load humanize i18n comments %}
 
-{% block extra_css %}
-		<link rel="stylesheet" href="{{ STATIC_URL }}css/maui.news.css" type="text/css">
-{% endblock %}
-
 {% block page_title %}{% trans "News" %}{% endblock %}
 
 {% block title %}<h1>{% trans "News" %} <small>{% trans "News & Updates" %}</small></h1>{% endblock %}
@@ -16,7 +12,7 @@
 
 	{% if news.paginator.count %}
 		{% for news_obj in news.object_list %}
-			<div class="news-row">
+			<div class="blog-list-detail">
 				<h4>{{ news_obj.title }}</h4>
 				<span class="label">{{ news_obj.category.name }}</span>
 				<span class="muted">{{ news_obj.created_at|naturaltime }}, {{ news_obj.user.get_full_name }}</span>
