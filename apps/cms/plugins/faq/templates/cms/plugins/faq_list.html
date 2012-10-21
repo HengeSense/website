@@ -1,4 +1,7 @@
+{% load i18n %}
+
 <div class="faq-list">
+	<p>{% trans "Summary:" %}</p>
 	<ul>
 		{% for faq_entry in faq_list %}
 			<li{% if css %} class="{{ css }}"{% endif %}>
@@ -8,4 +11,6 @@
 			{% if faq_entry.body %}<hr>{% endif %}
 		{% endfor %}
 	</ul>
+
+	<hr>
 </div>
