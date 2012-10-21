@@ -16,30 +16,26 @@
 
 	{% if news.paginator.count %}
 		{% for news_obj in news.object_list %}
-			<div class="row-fluid">
-				<div class="span1"><span class="label">{{ news_obj.category.name }}</span></div>
-				<div class="span11">
-					<div class="news-row">
-						<h4>{{ news_obj.title }}</h4>
-						<span class="muted">{{ news_obj.created_at|naturaltime }}, {{ news_obj.user.get_full_name }}</span>
-						<p>
-							{{ news_obj.body|striptags|linebreaksbr|urlizetrunc:20|safe|truncatewords:words }}
-						</p>
-						<div class="row-fluid">
-							{% get_comment_count for news_obj as comment_count %}
-							<div class="span10">
-								<em class="muted">{% blocktrans %}{{ comment_count }} comments{% endblocktrans %}</em>
-								{% if tag %}
-									<p class="tags">
-										{% for curtag in news_obj.tags.all %}
-											<a href="{% url news_tags tag=curtag.name %}"><span class="label label-info tag-weight-1">{{ curtag.name }}</span></a>
-										{% endfor %}
-									</p>
-								{% endif %}
-							</div>
-							<div class="span2"><a class="btn btn-primary" href="{{ news_obj.get_absolute_url }}">{% trans "Read More" %}</a></div>
-						</div>
+			<div class="news-row">
+				<h4>{{ news_obj.title }}</h4>
+				<span class="label">{{ news_obj.category.name }}</span>
+				<span class="muted">{{ news_obj.created_at|naturaltime }}, {{ news_obj.user.get_full_name }}</span>
+				<p>
+					{{ news_obj.body|safe|truncatewords:words }}
+				</p>
+				<div class="row-fluid">
+					{% get_comment_count for news_obj as comment_count %}
+					<div class="span10">
+						<em class="muted">{% blocktrans %}{{ comment_count }} comments{% endblocktrans %}</em>
+						{% if tag %}
+							<p class="tags">
+								{% for curtag in news_obj.tags.all %}
+									<a href="{% url news_tags tag=curtag.name %}"><span class="label label-info tag-weight-1">{{ curtag.name }}</span></a>
+								{% endfor %}
+							</p>
+						{% endif %}
 					</div>
+					<div class="span2"><a class="btn btn-primary" href="{{ news_obj.get_absolute_url }}">{% trans "Read More" %}</a></div>
 				</div>
 			</div>
 		{% endfor %}
