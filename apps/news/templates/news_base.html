@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% load i18n %}
+
 {% block final_js %}
 	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 {% endblock %}
@@ -24,6 +26,10 @@
 
 						<!-- Facebook Like Box -->
 						<div class="fb-like-box fb-like-box-reset" data-href="https://www.facebook.com/mauios" data-width="270" data-show-faces="true" data-stream="false" data-header="false"></div>
+
+						<!-- Twitter widget -->
+						<a class="twitter-timeline" href="https://twitter.com/mauilinux" data-widget-id="259950840339628032">{% trans "Tweets" %}</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 					</div>
 				</div>
 			</div>
