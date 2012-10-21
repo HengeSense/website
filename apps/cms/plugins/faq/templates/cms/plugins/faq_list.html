@@ -2,7 +2,7 @@
 	<ul>
 		{% for faq_entry in faq_list %}
 			<li{% if css %} class="{{ css }}"{% endif %}>
-				<a href="#{{ faq_entry.topic|safe }}">{{ faq_entry.topic|safe }}</a><br>
+				<a href="#{{ faq_entry.topic|slugify }}">{{ faq_entry.topic|safe }}</a><br>
 				{{ faq_entry.body|safe|truncatewords_html:10 }}
 			</li>
 			{% if faq_entry.body %}<hr>{% endif %}
