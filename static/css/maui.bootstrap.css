@@ -1,5 +1,9 @@
 /* Override Bootstrap styles */
 
+.navbar .brand {
+	padding: 8px 20px 2px;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	text-rendering: auto;
 	-webkit-font-smoothing: subpixel-antialiased;
