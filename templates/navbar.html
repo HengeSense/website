@@ -12,11 +12,13 @@
 	get_descendants: {{ child.get_descendants }}
 -->
 	<li id="dropdown-menu-{{ child.id }}" class="{% if child.children %}dropdown{% endif %} {% if child.selected or child.ancestor %}active{% endif %}">
-		<a href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}{% if child.children %}<span class="caret"></span>{% endif %}</a>
 		{% if child.children %}
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ child.get_menu_title }}{% if child.children %}<span class="caret"></span>{% endif %}</a>
 			<ul class="dropdown-menu">
 				{% include "navbar.html" with children=child.children %}
 			</ul>
+		{% else %}
+			<a href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}{% if child.children %}<span class="caret"></span>{% endif %}</a>
 		{% endif %}
 	</li>
 {% endfor %}
