@@ -10,7 +10,11 @@ class NewsMenu(CMSAttachMenu):
 
 	def get_nodes(self, request):
 		nodes = []
-		for item in News.pubs_objects.all():
+
+		node = NavigationNode(_("Index"), "/news", 0)
+		nodes.append(node)
+
+		for item in News.pubs_objects.all()[:10]:
 			node = NavigationNode(
 				item.title,
 #				reverse("news_details", kwargs={"slug": item.slug}),
