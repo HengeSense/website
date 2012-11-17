@@ -157,6 +157,8 @@ INSTALLED_APPS = (
     'google_analytics',
     # Django Taggit:
     'taggit',
+    # Django Propaganda:
+    'propaganda',
     # Django CMS plugins:
     'cms.plugins.file',
     'cms.plugins.googlemap',

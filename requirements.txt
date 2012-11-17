@@ -8,5 +8,6 @@ django-gravatar
 django-registration
 django-google-analytics
 django-taggit
+django-propaganda
 Markdown
 cmsplugin-markdown
