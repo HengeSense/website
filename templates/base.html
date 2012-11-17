@@ -100,24 +100,20 @@
 		{% block base_content %}{% endblock %}
 
 		<footer>
-			<div id="footer-floor">
-				<div class="container-fluid">
-					<div class="row-fluid">
-						<div class="span2"></div>
-						<div class="span4">
-							<p>
-								Copyright &copy; 2012 <a href="http://plfiorini.blogspot.com/">Pier Luigi Fiorini</a>. {% trans "All rights reserved. All logos and trademarks are and remain the property of their respective owners." %}
-								<a href="{% page_url "terms" %}">{% trans "Terms" %}</a>
-							</p>
-						</div>
-						<div class="span4">
-							<a href="https://twitter.com/mauilinux/" target="_blank" title="{% trans "Follow @maui on Twitter" %}"><img src="{{ STATIC_URL }}img/glyphicons/glyphicons_392_twitter_white.png"></a>
-							<a href="https://www.facebook.com/mauios/" target="_blank" title="{% blocktrans %}"Like" Maui on Facebook{% endblocktrans %}"><img src="{{ STATIC_URL }}img/glyphicons/glyphicons_390_facebook_white.png"></a>
-							<a href="https://plus.google.com/106410682256187719404/" target="_blank" title="{% trans "Follow us on Google+" %}"><img src="{{ STATIC_URL }}img/glyphicons/glyphicons_386_google_plus_white.png"></a>
-						</div>
-						<div class="span2"></div>
-					</div>
+			<div class="container-fluid">
+				<div class="span2"></div>
+				<div class="span4">
+					<p>
+						Copyright &copy; 2012 <a href="http://plfiorini.blogspot.com/">Pier Luigi Fiorini</a>. {% trans "All rights reserved. All logos and trademarks are and remain the property of their respective owners." %}
+						<a href="{% page_url "terms" %}">{% trans "Terms" %}</a>
+					</p>
 				</div>
+				<div class="span4">
+					<a href="https://twitter.com/mauilinux/" target="_blank" title="{% trans "Follow @maui on Twitter" %}"><img src="{{ STATIC_URL }}img/glyphicons/glyphicons_392_twitter_white.png"></a>
+					<a href="https://www.facebook.com/mauios/" target="_blank" title="{% blocktrans %}"Like" Maui on Facebook{% endblocktrans %}"><img src="{{ STATIC_URL }}img/glyphicons/glyphicons_390_facebook_white.png"></a>
+					<a href="https://plus.google.com/106410682256187719404/" target="_blank" title="{% trans "Follow us on Google+" %}"><img src="{{ STATIC_URL }}img/glyphicons/glyphicons_386_google_plus_white.png"></a>
+				</div>
+				<div class="span2"></div>
 			</div>
 		</footer>
 

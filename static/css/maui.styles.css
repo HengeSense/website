@@ -12,23 +12,14 @@ hr {
 }
 
 footer {
-	text-align: center;
-	background-color: #252525;
-	color: white;
+	background-image: url(../img/debut_dark.png);
+	color: #999;
 	border-top: 1px solid #eee;
 	padding-top: 1em;
 }
 
-footer p {
-	color: #999;
-}
-
 footer a {
 	color: white;
-}
-
-#footer-floor {
-	background-color: #1b1b1b;
 }
 
 #footer-floor .stay-in-touch {
@@ -131,7 +122,6 @@ img.boxed {box-shadow:0 0 10px #bbb;}
 .breadcrumb strong {color:#333;}
 .tree {padding:8px;}
 .tree li {margin:3px 0;}
-footer {background:rgba(220,220,220, 0.1); padding:30px 0; text-align:center;}
 footer .container {text-align:left; display:inline-block; width:auto;}
 footer li {float:left; list-style-type:none;}
 footer li li {float:none; clear:both; width:120px; padding:10px 0; margin-right:30px;}
