@@ -226,6 +226,9 @@ CMS_TEMPLATES = (
     ('template_nocolumns.html', 'No Columns'),
 )
 
+# Enable SEO fields.
+CMS_SEO_FIELDS = True
+
 # Languages available for CMS pages editing.
 LANGUAGES = [
     ('en', 'English'),
